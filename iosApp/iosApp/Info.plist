@@ -20,15 +20,6 @@
 	<string>$(TRAVELPAYOUTS_CLIENT_DEVICE_HOST)</string>
 	<key>TravelpayoutsMarker</key>
 	<string>$(TRAVELPAYOUTS_MARKER)</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<!--
-		  Lets a push with `content-available` wake the app to do something without showing
-		  anything. Not needed for an ordinary visible notification, which is delivered whatever
-		  this says, but a silent push is dropped outright without it.
-		-->
-		<string>remote-notification</string>
-	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>plus_jakartasans_regular.ttf</string>
@@ -36,6 +27,10 @@
 		<string>plus_jakartasans_semi_bold.ttf</string>
 		<string>plus_jakartasans_bold.ttf</string>
 		<string>plus_jakartasans_extra_bold.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>

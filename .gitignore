@@ -5,7 +5,7 @@
 xcuserdata
 !src/**/build/
 local.properties
-# The iOS counterpart of local.properties: the same account secrets, in the form Xcode reads.
+# The iOS counterpart of local.properties, generated from it by `./gradlew generateIosSecrets`.
 iosApp/Configuration/Secrets.xcconfig
 # Restored by `pod install` in iosApp/, and the SDK's vendored frameworks are large.
 iosApp/Pods/
@@ -21,5 +21,7 @@ captures
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 node_modules/
-# Firebase config: pulled per-developer from the Firebase console.
+# Firebase config, one file per platform, each downloaded from the Firebase console. Either one
+# takes precedence over the FIREBASE_* values when present; without it the app falls back to them.
 androidApp/google-services.json
+iosApp/iosApp/GoogleService-Info.plist
