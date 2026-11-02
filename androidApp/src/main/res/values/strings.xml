@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GoCheap: Flights &amp; eSIM</string>
+
+    <!--
+      The notification channel every push lands in. An Android resource rather than one of the
+      shared module's Compose strings because a channel is created from a Service, outside any
+      composition, and because the system reads this name in its own settings UI where none of
+      Compose's localisation is in scope.
+    -->
+    <string name="push_channel_name">Deals and alerts</string>
+    <string name="push_channel_description">Price drops, booking updates and travel offers.</string>
+</resources>

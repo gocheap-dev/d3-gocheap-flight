@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Repaints the Travelpayouts SDK's results screens in this app's blue.
+
+      The SDK exposes no theming API: its `TaTheme` resolves every brand surface through theme
+      attributes (`?attr/ta_primary` and friends), and those attributes point at the plain colour
+      resources overridden below. Nothing in the SDK's bytecode or its drawables carries the colour
+      as a literal, so these eight values are the whole of its palette's brand half — redefining
+      them here wins at resource-merge time, because an app module's resources take precedence over
+      a library's.
+
+      The other `ta_*` colours are left alone deliberately: its greys, dividers and surfaces already
+      match this app's, and its badge colours are a multi-hue set that means something (cheapest,
+      fastest, advertised) rather than branding.
+
+      The light values are FlightColors.Primary, PrimaryPressed and PrimarySoft verbatim. The SDK
+      follows the system dark mode even though this app is light-only, so the dark set is derived
+      from the same blue at the distances the SDK's own purples sit at: a lighter primary, a pressed
+      state below it, and two dark blue-greys for the disabled and tinted surfaces.
+    -->
+    <color name="ta_primary_light">#4A8DF6</color>
+    <color name="ta_primary_pressed_light">#3B7BE0</color>
+    <color name="ta_primary_disable_light">#D7E6FD</color>
+    <color name="ta_surface_tint_light">#E8F1FE</color>
+
+    <color name="ta_primary_dark">#8FB8FA</color>
+    <color name="ta_primary_pressed_dark">#6C9AE8</color>
+    <color name="ta_primary_disable_dark">#2B3A52</color>
+    <color name="ta_surface_tint_dark">#28374A</color>
+</resources>

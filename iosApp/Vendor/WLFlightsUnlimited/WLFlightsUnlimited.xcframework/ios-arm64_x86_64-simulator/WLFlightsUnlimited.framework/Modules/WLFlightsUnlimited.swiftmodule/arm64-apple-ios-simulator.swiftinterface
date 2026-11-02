@@ -1,0 +1,205 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WLFlightsUnlimited
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import Swift
+import UIKit
+import WLCommon
+import WLFlights
+import WLNetwork
+import WLUserInterface
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol DeeplinkParseService {
+  func parse(ticketModel: WLUserInterface.Deeplink.Flights.TicketModel, completion: @escaping (Swift.Result<WLFlightsUnlimited.DeeplinkParseServiceResult, WLFlights.DeeplinkParseServiceError>) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers final public class DeeplinkParseServiceImpl : WLFlightsUnlimited.DeeplinkParseService {
+  final public func parse(ticketModel: WLUserInterface.Deeplink.Flights.TicketModel, completion: @escaping (Swift.Result<WLFlightsUnlimited.DeeplinkParseServiceResult, WLFlights.DeeplinkParseServiceError>) -> Swift.Void)
+  @objc deinit
+}
+public struct DeeplinkParseServiceResult {
+  public let parameters: WLFlightsUnlimited.FlightsStartSearchParameters
+  public let ticketSignature: Swift.String
+}
+public struct FlightsCalendarSelection : Swift.Hashable, Swift.Codable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: WLFlightsUnlimited.FlightsCalendarSelection, b: WLFlightsUnlimited.FlightsCalendarSelection) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension WLFlightsUnlimited.FlightsCalendarSelection {
+  public var departureDate: Foundation.Date {
+    get
+  }
+  public var returnDate: Foundation.Date? {
+    get
+  }
+  public var isExpired: Swift.Bool {
+    get
+  }
+  public func title(formatter: Foundation.DateFormatter? = nil) -> Swift.String
+}
+public enum FlightsLocationsScreenType : Swift.Hashable, Swift.Codable {
+  case origin
+  case destination
+  public static func == (a: WLFlightsUnlimited.FlightsLocationsScreenType, b: WLFlightsUnlimited.FlightsLocationsScreenType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension WLFlightsUnlimited.FlightsLocationsSelection {
+  public struct Declension {
+    public let su: Swift.String
+    public let ro: Swift.String
+    public let da: Swift.String
+    public let vi: Swift.String
+    public let tv: Swift.String
+    public let pr: Swift.String
+  }
+}
+extension WLFlightsUnlimited.FlightsLocationsSelection {
+  public enum ObjectType : Swift.String, Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case airport
+    case city
+    case country
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [WLFlightsUnlimited.FlightsLocationsSelection.ObjectType]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [WLFlightsUnlimited.FlightsLocationsSelection.ObjectType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public struct FlightsLocationsSelection : Swift.Hashable, Swift.Codable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: WLFlightsUnlimited.FlightsLocationsSelection, b: WLFlightsUnlimited.FlightsLocationsSelection) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension WLFlightsUnlimited.FlightsLocationsSelection {
+  public var id: Swift.String {
+    get
+  }
+  public var type: WLFlightsUnlimited.FlightsLocationsSelection.ObjectType {
+    get
+  }
+  public var code: Swift.String {
+    get
+  }
+  public var cityCode: Swift.String? {
+    get
+  }
+  public var cityName: Swift.String? {
+    get
+  }
+  public var name: Swift.String? {
+    get
+  }
+  public var countryName: Swift.String {
+    get
+  }
+  public var mainAirportName: Swift.String? {
+    get
+  }
+  public var cases: WLFlightsUnlimited.FlightsLocationsSelection.Declension? {
+    get
+  }
+  public var cityCases: WLFlightsUnlimited.FlightsLocationsSelection.Declension? {
+    get
+  }
+  public var countryCases: WLFlightsUnlimited.FlightsLocationsSelection.Declension? {
+    get
+  }
+  public var attributedTitle: Foundation.NSAttributedString {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public func isNotInTheSameCity(with selection: WLFlightsUnlimited.FlightsLocationsSelection) -> Swift.Bool
+}
+extension WLFlightsUnlimited.FlightsPassengersSelection {
+  public enum TripClass : Swift.String {
+    case economy
+    case business
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public struct FlightsPassengersSelection : Swift.Hashable, Swift.Codable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: WLFlightsUnlimited.FlightsPassengersSelection, b: WLFlightsUnlimited.FlightsPassengersSelection) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension WLFlightsUnlimited.FlightsPassengersSelection {
+  public var adultsCount: Swift.Int {
+    get
+  }
+  public var childrenCount: Swift.Int {
+    get
+  }
+  public var infantsCount: Swift.Int {
+    get
+  }
+  public var tripClass: WLFlightsUnlimited.FlightsPassengersSelection.TripClass {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public static let `default`: WLFlightsUnlimited.FlightsPassengersSelection
+}
+public struct FlightsStartSearchParameters : Swift.Hashable, Swift.Codable {
+  public let originSelection: WLFlightsUnlimited.FlightsLocationsSelection
+  public let destinationSelection: WLFlightsUnlimited.FlightsLocationsSelection
+  public let calendarSelection: WLFlightsUnlimited.FlightsCalendarSelection
+  public let passengersSelection: WLFlightsUnlimited.FlightsPassengersSelection
+  public init(originSelection: WLFlightsUnlimited.FlightsLocationsSelection, destinationSelection: WLFlightsUnlimited.FlightsLocationsSelection, calendarSelection: WLFlightsUnlimited.FlightsCalendarSelection, passengersSelection: WLFlightsUnlimited.FlightsPassengersSelection)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: WLFlightsUnlimited.FlightsStartSearchParameters, b: WLFlightsUnlimited.FlightsStartSearchParameters) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class ScreenProvider {
+  public static let shared: WLFlightsUnlimited.ScreenProvider
+  final public func flightsLocationsViewController(type: WLFlightsUnlimited.FlightsLocationsScreenType, onFinish: @escaping (WLFlightsUnlimited.FlightsLocationsSelection?) -> Swift.Void) -> UIKit.UIViewController
+  final public func flightsCalendarViewController(currentSelection: WLFlightsUnlimited.FlightsCalendarSelection?, originLocationsSelection: WLFlightsUnlimited.FlightsLocationsSelection?, destinationLocationsSelection: WLFlightsUnlimited.FlightsLocationsSelection?, onFinish: @escaping (WLFlightsUnlimited.FlightsCalendarSelection?) -> Swift.Void) -> UIKit.UIViewController
+  final public func flightsPassengersViewController(currentSelection: WLFlightsUnlimited.FlightsPassengersSelection?, onFinish: @escaping (WLFlightsUnlimited.FlightsPassengersSelection?) -> Swift.Void) -> UIKit.UIViewController
+  final public func flightsResultsViewController(parameters: WLFlightsUnlimited.FlightsStartSearchParameters, ticketSignature: Swift.String? = nil) -> UIKit.UIViewController
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ServicesProvider {
+  public static let shared: WLFlightsUnlimited.ServicesProvider
+  final public var deeplinkParseService: any WLFlightsUnlimited.DeeplinkParseService {
+    get
+  }
+  @objc deinit
+}
+extension WLFlightsUnlimited.FlightsLocationsSelection.ObjectType : Swift.RawRepresentable {}
+extension WLFlightsUnlimited.FlightsPassengersSelection.TripClass : Swift.Equatable {}
+extension WLFlightsUnlimited.FlightsPassengersSelection.TripClass : Swift.Hashable {}
+extension WLFlightsUnlimited.FlightsPassengersSelection.TripClass : Swift.RawRepresentable {}

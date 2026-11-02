@@ -1,0 +1,86 @@
+[
+  {
+    "id": "37687",
+    "name": "Paris",
+    "location": "France",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "36014",
+    "hotel_id": null,
+    "destination_images": {
+      "image_jpeg": "https://content.r9cdn.net/rimg/dimg/bd/d1/2f268866-city-36014-189fed5d0cf.jpg?width=300&height=300&xhint=1689&yhint=931&outputtype=JPEG&crop=true",
+      "image_webp": "https://content.r9cdn.net/rimg/dimg/bd/d1/2f268866-city-36014-189fed5d0cf.jpg?width=300&height=300&xhint=1689&yhint=931&outputtype=WEBP&crop=true"
+    }
+  },
+  {
+    "id": "42002",
+    "name": "Barcelona",
+    "location": "Catalonia, Spain",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "22567",
+    "hotel_id": null,
+    "destination_images": {
+      "image_jpeg": "https://content.r9cdn.net/rimg/dimg/bf/3b/3dfae4b9-lm-4502-1553ae30bd0.jpg?width=300&height=300&xhint=1754&yhint=1433&outputtype=JPEG&crop=true",
+      "image_webp": "https://content.r9cdn.net/rimg/dimg/bf/3b/3dfae4b9-lm-4502-1553ae30bd0.jpg?width=300&height=300&xhint=1754&yhint=1433&outputtype=WEBP&crop=true"
+    }
+  },
+  {
+    "id": "59560",
+    "name": "New York City",
+    "location": "United States",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "15830",
+    "hotel_id": null,
+    "destination_images": {
+      "image_jpeg": "https://content.r9cdn.net/rimg/dimg/0d/ce/cda0a7f3-city-15830-168815a7746.jpg?width=300&height=300&xhint=1792&yhint=1597&outputtype=JPEG&crop=true",
+      "image_webp": "https://content.r9cdn.net/rimg/dimg/0d/ce/cda0a7f3-city-15830-168815a7746.jpg?width=300&height=300&xhint=1792&yhint=1597&outputtype=WEBP&crop=true"
+    }
+  },
+  {
+    "id": "1929",
+    "name": "Dubai",
+    "location": "United Arab Emirates",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "6080",
+    "hotel_id": null,
+    "destination_images": {
+      "image_jpeg": "https://content.r9cdn.net/rimg/dimg/9b/f7/7ab79f27-city-6080-158d0e1464c.jpg?width=300&height=300&xhint=1904&yhint=1457&outputtype=JPEG&crop=true",
+      "image_webp": "https://content.r9cdn.net/rimg/dimg/9b/f7/7ab79f27-city-6080-158d0e1464c.jpg?width=300&height=300&xhint=1904&yhint=1457&outputtype=WEBP&crop=true"
+    }
+  },
+  {
+    "id": "18056",
+    "name": "Bangkok",
+    "location": "Thailand",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "26166",
+    "hotel_id": null,
+    "destination_images": {
+      "image_jpeg": "https://content.r9cdn.net/rimg/dimg/21/e1/c054fc24-city-26166-176726042eb.jpg?width=300&height=300&xhint=2881&yhint=1499&outputtype=JPEG&crop=true",
+      "image_webp": "https://content.r9cdn.net/rimg/dimg/21/e1/c054fc24-city-26166-176726042eb.jpg?width=300&height=300&xhint=2881&yhint=1499&outputtype=WEBP&crop=true"
+    }
+  },
+  {
+    "id": "29230",
+    "name": "London",
+    "location": "England, United Kingdom",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "28501",
+    "hotel_id": null,
+    "destination_images": {
+      "image_jpeg": "https://content.r9cdn.net/rimg/dimg/8a/d8/29dcb2f0-city-28501-189fedf72f2.jpg?width=300&height=300&xhint=1400&yhint=1181&outputtype=JPEG&crop=true",
+      "image_webp": "https://content.r9cdn.net/rimg/dimg/8a/d8/29dcb2f0-city-28501-189fedf72f2.jpg?width=300&height=300&xhint=1400&yhint=1181&outputtype=WEBP&crop=true"
+    }
+  }
+]

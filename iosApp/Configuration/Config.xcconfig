@@ -1,0 +1,57 @@
+// CocoaPods writes its own xcconfig per configuration and normally sets it as the target's base
+// configuration — but it refuses to when one is already set, which is the case here. Including it
+// by hand is the documented way out, and `#include?` makes it optional: before `pod install` the
+// file does not exist and this line does nothing, which is what keeps the project building
+// without pods.
+#include? "../Pods/Target Support Files/Pods-iosApp/Pods-iosApp.$(CONFIGURATION:lower).xcconfig"
+
+TEAM_ID=
+
+PRODUCT_NAME=FlightTp
+PRODUCT_BUNDLE_IDENTIFIER=com.gocheap.travel.FlightTp$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
+
+// Travelpayouts credentials, reaching Swift through Info.plist — the iOS counterpart of the
+// Android module's local.properties. Leave them blank and the SDK simply is not initialised:
+// the flight search then falls back to this app's own results, exactly as before.
+//
+// Request a marker and an API key from support@travelpayouts.com.
+TRAVELPAYOUTS_MARKER=
+TRAVELPAYOUTS_API_KEY=
+
+// The identifier the SDK reports its searches under, and the App Store id behind its own "rate
+// this app" prompt. Both optional; the SDK falls back to its defaults when they are blank.
+TRAVELPAYOUTS_CLIENT_DEVICE_HOST=
+TRAVELPAYOUTS_APPSTORE_ID=
+
+// Firebase, for GA4. A `GoogleService-Info.plist` added to the iosApp target takes precedence
+// over all four of these and is the configuration to ship; they are the way to run without that
+// file, and are exactly the fallback the Android module makes out of local.properties — see
+// `FlightTpApplication.ensureFirebase`. Leave them blank and no analytics is reported; nothing
+// else about the app changes.
+//
+// All four come off the same Firebase iOS app: App ID and Sender ID from Project settings, the
+// API key from the iOS app's own key, and the project id from the project.
+FIREBASE_APP_ID=
+FIREBASE_GCM_SENDER_ID=
+FIREBASE_API_KEY=
+FIREBASE_PROJECT_ID=
+
+// Push notifications. What goes into `aps-environment` in Configuration/iosApp.entitlements, which
+// the target points at — see CODE_SIGN_ENTITLEMENTS in the project file.
+//
+// The two environments are separate APNs servers, and a token issued by one is not addressable on
+// the other — so this follows the configuration rather than being pinned to either. A TestFlight
+// or App Store build is a Release build and wants `production`; everything run from Xcode is a
+// Debug build and wants `development`.
+APS_ENVIRONMENT = development
+APS_ENVIRONMENT[config=Release] = production
+
+// The real values, from a file that is not committed — this one is, and a marker is what the
+// affiliate revenue is paid against. Exactly the split local.properties makes on the Android side.
+//
+// Last, because an xcconfig takes the last assignment of a name: this overrides the blanks above.
+// `#include?` so a checkout without the file still builds, with the SDK simply not initialised.
+#include? "Secrets.xcconfig"

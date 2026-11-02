@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The Travelpayouts SDK's manifest declares a maps meta-data entry pointing at this name, so it
+      has to exist for the merge to resolve. Blank until a key is needed: only the SDK's map views
+      read it, and the flight results this app opens are a list.
+    -->
+    <string name="google_maps_api_key" translatable="false"></string>
+
+    <!--
+      Firebase Crashlytics arrives with the SDK and refuses to start without a build id, which its
+      Gradle plugin would normally generate per build. This app does not apply that plugin — it has
+      no Firebase project of its own yet — so a fixed id stands in. Crash reports are grouped by it,
+      so applying the plugin later (alongside a google-services.json) is the real fix: at that point
+      delete these two.
+    -->
+    <string name="com.google.firebase.crashlytics.build_id" translatable="false">
+        00000000-0000-4000-8000-000000000001
+    </string>
+    <string name="com.crashlytics.android.build_id" translatable="false">
+        00000000-0000-4000-8000-000000000001
+    </string>
+</resources>

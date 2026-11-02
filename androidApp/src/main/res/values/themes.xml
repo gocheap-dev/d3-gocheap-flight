@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      The theme the Travelpayouts results Activity runs under.
+
+      It inherits the SDK's own TaTheme, which the Activity needs to be an AppCompat descendant,
+      and adds nothing but the window animations: the SDK styles its own screen and this has no
+      business changing how it looks, only how it arrives and leaves.
+    -->
+    <style name="TravelSdkResultsTheme" parent="TaTheme">
+        <item name="android:windowAnimationStyle">@style/NavWindowAnimation</item>
+    </style>
+
+    <!--
+      Flight results are a separate Activity because they come from the SDK, while the stay and
+      car results are pages inside the one nav graph. Without this the odd one out is obvious: the
+      two in-app results slide, and flights opens and closes on whatever the platform does between
+      Activities, which is a scale and fade rather than a slide in either direction.
+
+      Full width on both halves, matching `NavMotion`'s Android push — the two windows tile edge
+      to edge and move as one sheet, rather than the quarter-width parallax iOS uses.
+    -->
+    <style name="NavWindowAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/nav_slide_in_from_end</item>
+        <item name="android:activityOpenExitAnimation">@anim/nav_slide_out_to_start</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nav_slide_in_from_start</item>
+        <item name="android:activityCloseExitAnimation">@anim/nav_slide_out_to_end</item>
+    </style>
+
+</resources>

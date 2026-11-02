@@ -1,0 +1,23 @@
+*.iml
+.kotlin
+.gradle
+**/build/
+xcuserdata
+!src/**/build/
+local.properties
+# The iOS counterpart of local.properties: the same account secrets, in the form Xcode reads.
+iosApp/Configuration/Secrets.xcconfig
+# Restored by `pod install` in iosApp/, and the SDK's vendored frameworks are large.
+iosApp/Pods/
+.idea
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/

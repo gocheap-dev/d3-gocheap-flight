@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  The Push Notifications capability. Without this entitlement in the signed app, APNs refuses
+	  to issue a device token and `didFailToRegisterForRemoteNotifications` is the only thing that
+	  ever fires.
+
+	  The value comes from APS_ENVIRONMENT in Config.xcconfig — `development` for Debug, `production`
+	  for Release — because the two are different APNs servers and a build signed for one is not
+	  addressable on the other.
+
+	  Kept beside Config.xcconfig rather than inside iosApp/ on purpose: everything in that folder is
+	  a member of the app target through the project's synchronized group, and an entitlements file
+	  copied into the bundle as a resource is both useless and a disclosure.
+	-->
+	<key>aps-environment</key>
+	<string>$(APS_ENVIRONMENT)</string>
+</dict>
+</plist>

@@ -1,0 +1,4524 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "WLFlightsUnlimited",
+    "printedName": "WLFlightsUnlimited",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLUserInterface",
+        "printedName": "WLUserInterface",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeeplinkParseService",
+        "printedName": "DeeplinkParseService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "parse",
+            "printedName": "parse(ticketModel:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TicketModel",
+                "printedName": "WLUserInterface.Deeplink.Flights.TicketModel",
+                "usr": "s:15WLUserInterface8DeeplinkO7FlightsO11TicketModelV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<WLFlightsUnlimited.DeeplinkParseServiceResult, WLFlights.DeeplinkParseServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<WLFlightsUnlimited.DeeplinkParseServiceResult, WLFlights.DeeplinkParseServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeeplinkParseServiceResult",
+                        "printedName": "WLFlightsUnlimited.DeeplinkParseServiceResult",
+                        "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeeplinkParseServiceError",
+                        "printedName": "WLFlights.DeeplinkParseServiceError",
+                        "usr": "s:9WLFlights25DeeplinkParseServiceErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited20DeeplinkParseServiceP5parse11ticketModel10completiony15WLUserInterface0C0O7FlightsO06TicketH0V_ys6ResultOyAA0cdeN0V0A00cdE5ErrorOGctF",
+            "mangledName": "$s18WLFlightsUnlimited20DeeplinkParseServiceP5parse11ticketModel10completiony15WLUserInterface0C0O7FlightsO06TicketH0V_ys6ResultOyAA0cdeN0V0A00cdE5ErrorOGctF",
+            "moduleName": "WLFlightsUnlimited",
+            "genericSig": "<τ_0_0 where τ_0_0 : WLFlightsUnlimited.DeeplinkParseService>",
+            "sugared_genericSig": "<Self where Self : WLFlightsUnlimited.DeeplinkParseService>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18WLFlightsUnlimited20DeeplinkParseServiceP",
+        "mangledName": "$s18WLFlightsUnlimited20DeeplinkParseServiceP",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeeplinkParseServiceImpl",
+        "printedName": "DeeplinkParseServiceImpl",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "parse",
+            "printedName": "parse(ticketModel:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TicketModel",
+                "printedName": "WLUserInterface.Deeplink.Flights.TicketModel",
+                "usr": "s:15WLUserInterface8DeeplinkO7FlightsO11TicketModelV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<WLFlightsUnlimited.DeeplinkParseServiceResult, WLFlights.DeeplinkParseServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<WLFlightsUnlimited.DeeplinkParseServiceResult, WLFlights.DeeplinkParseServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeeplinkParseServiceResult",
+                        "printedName": "WLFlightsUnlimited.DeeplinkParseServiceResult",
+                        "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeeplinkParseServiceError",
+                        "printedName": "WLFlights.DeeplinkParseServiceError",
+                        "usr": "s:9WLFlights25DeeplinkParseServiceErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited24DeeplinkParseServiceImplC5parse11ticketModel10completiony15WLUserInterface0C0O7FlightsO06TicketI0V_ys6ResultOyAA0cdeO0V0A00cdE5ErrorOGctF",
+            "mangledName": "$s18WLFlightsUnlimited24DeeplinkParseServiceImplC5parse11ticketModel10completiony15WLUserInterface0C0O7FlightsO06TicketI0V_ys6ResultOyAA0cdeO0V0A00cdE5ErrorOGctF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18WLFlightsUnlimited24DeeplinkParseServiceImplC",
+        "mangledName": "$s18WLFlightsUnlimited24DeeplinkParseServiceImplC",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeeplinkParseService",
+            "printedName": "DeeplinkParseService",
+            "usr": "s:18WLFlightsUnlimited20DeeplinkParseServiceP",
+            "mangledName": "$s18WLFlightsUnlimited20DeeplinkParseServiceP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeeplinkParseServiceResult",
+        "printedName": "DeeplinkParseServiceResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "parameters",
+            "printedName": "parameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsStartSearchParameters",
+                "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV10parametersAA28FlightsStartSearchParametersVvp",
+            "mangledName": "$s18WLFlightsUnlimited26DeeplinkParseServiceResultV10parametersAA28FlightsStartSearchParametersVvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsStartSearchParameters",
+                    "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                    "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV10parametersAA28FlightsStartSearchParametersVvg",
+                "mangledName": "$s18WLFlightsUnlimited26DeeplinkParseServiceResultV10parametersAA28FlightsStartSearchParametersVvg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ticketSignature",
+            "printedName": "ticketSignature",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV15ticketSignatureSSvp",
+            "mangledName": "$s18WLFlightsUnlimited26DeeplinkParseServiceResultV15ticketSignatureSSvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV15ticketSignatureSSvg",
+                "mangledName": "$s18WLFlightsUnlimited26DeeplinkParseServiceResultV15ticketSignatureSSvg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18WLFlightsUnlimited26DeeplinkParseServiceResultV",
+        "mangledName": "$s18WLFlightsUnlimited26DeeplinkParseServiceResultV",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLCommon",
+        "printedName": "WLCommon",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLUserInterface",
+        "printedName": "WLUserInterface",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlightsCalendarSelection",
+        "printedName": "FlightsCalendarSelection",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(spiModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsCalendarSelection",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CalendarSelection",
+                "printedName": "WLUserInterface.CalendarSelection",
+                "usr": "s:15WLUserInterface17CalendarSelectionO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV8spiModelAC15WLUserInterface0dE0O_tcfc",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV8spiModelAC15WLUserInterface0dE0O_tcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "CleverPumpkinInternal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(spiModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsCalendarSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                    "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLUserInterface.CalendarSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CalendarSelection",
+                    "printedName": "WLUserInterface.CalendarSelection",
+                    "usr": "s:15WLUserInterface17CalendarSelectionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV8spiModelACSg15WLUserInterface0dE0OSg_tcfc",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV8spiModelACSg15WLUserInterface0dE0OSg_tcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "CleverPumpkinInternal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsCalendarSelection",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV9hashValueSivp",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV9hashValueSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV9hashValueSivg",
+                "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV9hashValueSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV4hash4intoys6HasherVz_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsCalendarSelection",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsCalendarSelection",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV2eeoiySbAC_ACtFZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "departureDate",
+            "printedName": "departureDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV13departureDate10Foundation0G0Vvp",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV13departureDate10Foundation0G0Vvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV13departureDate10Foundation0G0Vvg",
+                "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV13departureDate10Foundation0G0Vvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "returnDate",
+            "printedName": "returnDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV10returnDate10Foundation0G0VSgvp",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV10returnDate10Foundation0G0VSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV10returnDate10Foundation0G0VSgvg",
+                "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV10returnDate10Foundation0G0VSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isExpired",
+            "printedName": "isExpired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV9isExpiredSbvp",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV9isExpiredSbvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV9isExpiredSbvg",
+                "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV9isExpiredSbvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "title",
+            "printedName": "title(formatter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.DateFormatter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateFormatter",
+                    "printedName": "Foundation.DateFormatter",
+                    "usr": "c:objc(cs)NSDateFormatter"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV5title9formatterSSSo15NSDateFormatterCSg_tF",
+            "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV5title9formatterSSSo15NSDateFormatterCSg_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV",
+        "mangledName": "$s18WLFlightsUnlimited24FlightsCalendarSelectionV",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlightsLocationsScreenType",
+        "printedName": "FlightsLocationsScreenType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "origin",
+            "printedName": "origin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WLFlightsUnlimited.FlightsLocationsScreenType.Type) -> WLFlightsUnlimited.FlightsLocationsScreenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsScreenType",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                    "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlightsLocationsScreenType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                        "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO6originyA2CmF",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO6originyA2CmF",
+            "moduleName": "WLFlightsUnlimited"
+          },
+          {
+            "kind": "Var",
+            "name": "destination",
+            "printedName": "destination",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WLFlightsUnlimited.FlightsLocationsScreenType.Type) -> WLFlightsUnlimited.FlightsLocationsScreenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsScreenType",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                    "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlightsLocationsScreenType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                        "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO11destinationyA2CmF",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO11destinationyA2CmF",
+            "moduleName": "WLFlightsUnlimited"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsScreenType",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsScreenType",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO9hashValueSivp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO9hashValueSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO9hashValueSivg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO9hashValueSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsScreenType",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO6encode2toys7Encoder_p_tKF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO",
+        "mangledName": "$s18WLFlightsUnlimited26FlightsLocationsScreenTypeO",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlightsLocationsSelection",
+        "printedName": "FlightsLocationsSelection",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(spiModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Airport",
+                "printedName": "WLNetwork.Flights.Responses.Airport",
+                "usr": "s:9WLNetwork7FlightsO9ResponsesO7AirportV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV8spiModelAC9WLNetwork0C0O9ResponsesO7AirportV_tcfc",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV8spiModelAC9WLNetwork0C0O9ResponsesO7AirportV_tcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "CleverPumpkinInternal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(spiModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLNetwork.Flights.Responses.Airport?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Airport",
+                    "printedName": "WLNetwork.Flights.Responses.Airport",
+                    "usr": "s:9WLNetwork7FlightsO9ResponsesO7AirportV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV8spiModelACSg9WLNetwork0C0O9ResponsesO7AirportVSg_tcfc",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV8spiModelACSg9WLNetwork0C0O9ResponsesO7AirportVSg_tcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "CleverPumpkinInternal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV9hashValueSivp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV9hashValueSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV9hashValueSivg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV9hashValueSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4hash4intoys6HasherVz_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV2eeoiySbAC_ACtFZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Declension",
+            "printedName": "Declension",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "su",
+                "printedName": "su",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2suSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2suSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2suSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2suSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ro",
+                "printedName": "ro",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2roSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2roSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2roSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2roSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "da",
+                "printedName": "da",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2daSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2daSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2daSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2daSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "vi",
+                "printedName": "vi",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2viSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2viSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2viSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2viSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tv",
+                "printedName": "tv",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2tvSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2tvSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2tvSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2tvSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "pr",
+                "printedName": "pr",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2prSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2prSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2prSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV2prSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ObjectType",
+            "printedName": "ObjectType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "airport",
+                "printedName": "airport",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WLFlightsUnlimited.FlightsLocationsSelection.ObjectType.Type) -> WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ObjectType",
+                            "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO7airportyA2EmF",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO7airportyA2EmF",
+                "moduleName": "WLFlightsUnlimited"
+              },
+              {
+                "kind": "Var",
+                "name": "city",
+                "printedName": "city",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WLFlightsUnlimited.FlightsLocationsSelection.ObjectType.Type) -> WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ObjectType",
+                            "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO4cityyA2EmF",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO4cityyA2EmF",
+                "moduleName": "WLFlightsUnlimited"
+              },
+              {
+                "kind": "Var",
+                "name": "country",
+                "printedName": "country",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WLFlightsUnlimited.FlightsLocationsSelection.ObjectType.Type) -> WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ObjectType",
+                            "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO7countryyA2EmF",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO7countryyA2EmF",
+                "moduleName": "WLFlightsUnlimited"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8rawValueAESgSS_tcfc",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8rawValueSSvp",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8rawValueSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8rawValueSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8rawValueSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[WLFlightsUnlimited.FlightsLocationsSelection.ObjectType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectType",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8allCasesSayAEGvpZ",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8allCasesSayAEGvpZ",
+                "moduleName": "WLFlightsUnlimited",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[WLFlightsUnlimited.FlightsLocationsSelection.ObjectType]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ObjectType",
+                            "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8allCasesSayAEGvgZ",
+                    "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO8allCasesSayAEGvgZ",
+                    "moduleName": "WLFlightsUnlimited",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[WLFlightsUnlimited.FlightsLocationsSelection.ObjectType]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ObjectType",
+                            "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV2idSSvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV2idSSvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV2idSSvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV2idSSvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ObjectType",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4typeAC10ObjectTypeOvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4typeAC10ObjectTypeOvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectType",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.ObjectType",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10ObjectTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4typeAC10ObjectTypeOvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4typeAC10ObjectTypeOvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4codeSSvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4codeSSvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4codeSSvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4codeSSvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cityCode",
+            "printedName": "cityCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV8cityCodeSSSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV8cityCodeSSSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV8cityCodeSSSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV8cityCodeSSSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cityName",
+            "printedName": "cityName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV8cityNameSSSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV8cityNameSSSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV8cityNameSSSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV8cityNameSSSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4nameSSSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4nameSSSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV4nameSSSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV4nameSSSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryName",
+            "printedName": "countryName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV11countryNameSSvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV11countryNameSSvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV11countryNameSSvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV11countryNameSSvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mainAirportName",
+            "printedName": "mainAirportName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV15mainAirportNameSSSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV15mainAirportNameSSSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV15mainAirportNameSSSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV15mainAirportNameSSSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cases",
+            "printedName": "cases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Declension",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV5casesAC10DeclensionVSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV5casesAC10DeclensionVSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Declension",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV5casesAC10DeclensionVSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV5casesAC10DeclensionVSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cityCases",
+            "printedName": "cityCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Declension",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV9cityCasesAC10DeclensionVSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV9cityCasesAC10DeclensionVSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Declension",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV9cityCasesAC10DeclensionVSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV9cityCasesAC10DeclensionVSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryCases",
+            "printedName": "countryCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Declension",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV12countryCasesAC10DeclensionVSgvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV12countryCasesAC10DeclensionVSgvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Declension",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection.Declension",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV10DeclensionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV12countryCasesAC10DeclensionVSgvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV12countryCasesAC10DeclensionVSgvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attributedTitle",
+            "printedName": "attributedTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSAttributedString",
+                "printedName": "Foundation.NSAttributedString",
+                "usr": "c:objc(cs)NSAttributedString"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV15attributedTitleSo18NSAttributedStringCvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV15attributedTitleSo18NSAttributedStringCvp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSAttributedString",
+                    "printedName": "Foundation.NSAttributedString",
+                    "usr": "c:objc(cs)NSAttributedString"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV15attributedTitleSo18NSAttributedStringCvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV15attributedTitleSo18NSAttributedStringCvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV5titleSSvp",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV5titleSSvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV5titleSSvg",
+                "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV5titleSSvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "isNotInTheSameCity",
+            "printedName": "isNotInTheSameCity(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV18isNotInTheSameCity4withSbAC_tF",
+            "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV18isNotInTheSameCity4withSbAC_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV",
+        "mangledName": "$s18WLFlightsUnlimited25FlightsLocationsSelectionV",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlightsPassengersSelection",
+        "printedName": "FlightsPassengersSelection",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(spiModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PassengersScreenSelection",
+                "printedName": "WLFlights.PassengersScreenSelection",
+                "usr": "s:9WLFlights25PassengersScreenSelectionV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV8spiModelAC0A00d6ScreenE0V_tcfc",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV8spiModelAC0A00d6ScreenE0V_tcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "CleverPumpkinInternal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(spiModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsPassengersSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                    "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlights.PassengersScreenSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassengersScreenSelection",
+                    "printedName": "WLFlights.PassengersScreenSelection",
+                    "usr": "s:9WLFlights25PassengersScreenSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV8spiModelACSg0A00d6ScreenE0VSg_tcfc",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV8spiModelACSg0A00d6ScreenE0VSg_tcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "CleverPumpkinInternal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9hashValueSivp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9hashValueSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9hashValueSivg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9hashValueSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV4hash4intoys6HasherVz_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV2eeoiySbAC_ACtFZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "TripClass",
+            "printedName": "TripClass",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "economy",
+                "printedName": "economy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WLFlightsUnlimited.FlightsPassengersSelection.TripClass.Type) -> WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TripClass",
+                        "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                        "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TripClass",
+                            "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO7economyyA2EmF",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO7economyyA2EmF",
+                "moduleName": "WLFlightsUnlimited"
+              },
+              {
+                "kind": "Var",
+                "name": "business",
+                "printedName": "business",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WLFlightsUnlimited.FlightsPassengersSelection.TripClass.Type) -> WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TripClass",
+                        "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                        "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TripClass",
+                            "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8businessyA2EmF",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8businessyA2EmF",
+                "moduleName": "WLFlightsUnlimited"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TripClass",
+                        "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                        "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8rawValueAESgSS_tcfc",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8rawValueAESgSS_tcfc",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8rawValueSSvp",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8rawValueSSvp",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8rawValueSSvg",
+                    "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO8rawValueSSvg",
+                    "moduleName": "WLFlightsUnlimited",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adultsCount",
+            "printedName": "adultsCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV11adultsCountSivp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV11adultsCountSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV11adultsCountSivg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV11adultsCountSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "childrenCount",
+            "printedName": "childrenCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV13childrenCountSivp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV13childrenCountSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV13childrenCountSivg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV13childrenCountSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "infantsCount",
+            "printedName": "infantsCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV12infantsCountSivp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV12infantsCountSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV12infantsCountSivg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV12infantsCountSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tripClass",
+            "printedName": "tripClass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TripClass",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9tripClassAC04TripG0Ovp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9tripClassAC04TripG0Ovp",
+            "moduleName": "WLFlightsUnlimited",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TripClass",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection.TripClass",
+                    "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9TripClassO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV9tripClassAC04TripG0Ovg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV9tripClassAC04TripG0Ovg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV5titleSSvp",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV5titleSSvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV5titleSSvg",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV5titleSSvg",
+                "moduleName": "WLFlightsUnlimited",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV7defaultACvpZ",
+            "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV7defaultACvpZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsPassengersSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                    "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV7defaultACvgZ",
+                "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV7defaultACvgZ",
+                "moduleName": "WLFlightsUnlimited",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV",
+        "mangledName": "$s18WLFlightsUnlimited26FlightsPassengersSelectionV",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLUserInterface",
+        "printedName": "WLUserInterface",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLNetwork",
+        "printedName": "WLNetwork",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlightsStartSearchParameters",
+        "printedName": "FlightsStartSearchParameters",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "originSelection",
+            "printedName": "originSelection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV15originSelectionAA0c9LocationsH0Vvp",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV15originSelectionAA0c9LocationsH0Vvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV15originSelectionAA0c9LocationsH0Vvg",
+                "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV15originSelectionAA0c9LocationsH0Vvg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "destinationSelection",
+            "printedName": "destinationSelection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV20destinationSelectionAA0c9LocationsH0Vvp",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV20destinationSelectionAA0c9LocationsH0Vvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV20destinationSelectionAA0c9LocationsH0Vvg",
+                "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV20destinationSelectionAA0c9LocationsH0Vvg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "calendarSelection",
+            "printedName": "calendarSelection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsCalendarSelection",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV17calendarSelectionAA0c8CalendarH0Vvp",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV17calendarSelectionAA0c8CalendarH0Vvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsCalendarSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                    "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV17calendarSelectionAA0c8CalendarH0Vvg",
+                "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV17calendarSelectionAA0c8CalendarH0Vvg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passengersSelection",
+            "printedName": "passengersSelection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV19passengersSelectionAA0c10PassengersH0Vvp",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV19passengersSelectionAA0c10PassengersH0Vvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsPassengersSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                    "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV19passengersSelectionAA0c10PassengersH0Vvg",
+                "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV19passengersSelectionAA0c10PassengersH0Vvg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(originSelection:destinationSelection:calendarSelection:passengersSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsStartSearchParameters",
+                "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsSelection",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsCalendarSelection",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsPassengersSelection",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV15originSelection011destinationH008calendarH0010passengersH0AcA0c9LocationsH0V_AiA0c8CalendarH0VAA0c10PassengersH0Vtcfc",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV15originSelection011destinationH008calendarH0010passengersH0AcA0c9LocationsH0V_AiA0c8CalendarH0VAA0c10PassengersH0Vtcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsStartSearchParameters",
+                "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV9hashValueSivp",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV9hashValueSivp",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV9hashValueSivg",
+                "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV9hashValueSivg",
+                "moduleName": "WLFlightsUnlimited",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV4hash4intoys6HasherVz_tF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WLFlightsUnlimited",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsStartSearchParameters",
+                "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsStartSearchParameters",
+                "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV2eeoiySbAC_ACtFZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV",
+        "mangledName": "$s18WLFlightsUnlimited28FlightsStartSearchParametersV",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScreenProvider",
+        "printedName": "ScreenProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScreenProvider",
+                "printedName": "WLFlightsUnlimited.ScreenProvider",
+                "usr": "s:18WLFlightsUnlimited14ScreenProviderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited14ScreenProviderC6sharedACvpZ",
+            "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC6sharedACvpZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenProvider",
+                    "printedName": "WLFlightsUnlimited.ScreenProvider",
+                    "usr": "s:18WLFlightsUnlimited14ScreenProviderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited14ScreenProviderC6sharedACvgZ",
+                "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC6sharedACvgZ",
+                "moduleName": "WLFlightsUnlimited",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "flightsLocationsViewController",
+            "printedName": "flightsLocationsViewController(type:onFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsLocationsScreenType",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsScreenType",
+                "usr": "s:18WLFlightsUnlimited26FlightsLocationsScreenTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WLFlightsUnlimited.FlightsLocationsSelection?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlightsLocationsSelection",
+                        "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                        "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited14ScreenProviderC30flightsLocationsViewController4type8onFinishSo06UIViewH0CAA07FlightsfC4TypeO_yAA0mF9SelectionVSgctF",
+            "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC30flightsLocationsViewController4type8onFinishSo06UIViewH0CAA07FlightsfC4TypeO_yAA0mF9SelectionVSgctF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flightsCalendarViewController",
+            "printedName": "flightsCalendarViewController(currentSelection:originLocationsSelection:destinationLocationsSelection:onFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsCalendarSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsCalendarSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                    "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsLocationsSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsLocationsSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsLocationsSelection",
+                    "usr": "s:18WLFlightsUnlimited25FlightsLocationsSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WLFlightsUnlimited.FlightsCalendarSelection?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsCalendarSelection?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlightsCalendarSelection",
+                        "printedName": "WLFlightsUnlimited.FlightsCalendarSelection",
+                        "usr": "s:18WLFlightsUnlimited24FlightsCalendarSelectionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited14ScreenProviderC29flightsCalendarViewController16currentSelection015originLocationsJ0011destinationlJ08onFinishSo06UIViewH0CAA07FlightsfJ0VSg_AA0qlJ0VSgAPyAMctF",
+            "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC29flightsCalendarViewController16currentSelection015originLocationsJ0011destinationlJ08onFinishSo06UIViewH0CAA07FlightsfJ0VSg_AA0qlJ0VSgAPyAMctF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flightsPassengersViewController",
+            "printedName": "flightsPassengersViewController(currentSelection:onFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WLFlightsUnlimited.FlightsPassengersSelection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlightsPassengersSelection",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                    "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WLFlightsUnlimited.FlightsPassengersSelection?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WLFlightsUnlimited.FlightsPassengersSelection?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlightsPassengersSelection",
+                        "printedName": "WLFlightsUnlimited.FlightsPassengersSelection",
+                        "usr": "s:18WLFlightsUnlimited26FlightsPassengersSelectionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited14ScreenProviderC31flightsPassengersViewController16currentSelection8onFinishSo06UIViewH0CAA07FlightsfJ0VSg_yAKctF",
+            "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC31flightsPassengersViewController16currentSelection8onFinishSo06UIViewH0CAA07FlightsfJ0VSg_yAKctF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flightsResultsViewController",
+            "printedName": "flightsResultsViewController(parameters:ticketSignature:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlightsStartSearchParameters",
+                "printedName": "WLFlightsUnlimited.FlightsStartSearchParameters",
+                "usr": "s:18WLFlightsUnlimited28FlightsStartSearchParametersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WLFlightsUnlimited14ScreenProviderC28flightsResultsViewController10parameters15ticketSignatureSo06UIViewH0CAA28FlightsStartSearchParametersV_SSSgtF",
+            "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC28flightsResultsViewController10parameters15ticketSignatureSo06UIViewH0CAA28FlightsStartSearchParametersV_SSSgtF",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18WLFlightsUnlimited14ScreenProviderC",
+        "mangledName": "$s18WLFlightsUnlimited14ScreenProviderC",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WLFlights",
+        "printedName": "WLFlights",
+        "declKind": "Import",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ServicesProvider",
+        "printedName": "ServicesProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ServicesProvider",
+                "printedName": "WLFlightsUnlimited.ServicesProvider",
+                "usr": "s:18WLFlightsUnlimited16ServicesProviderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited16ServicesProviderC6sharedACvpZ",
+            "mangledName": "$s18WLFlightsUnlimited16ServicesProviderC6sharedACvpZ",
+            "moduleName": "WLFlightsUnlimited",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServicesProvider",
+                    "printedName": "WLFlightsUnlimited.ServicesProvider",
+                    "usr": "s:18WLFlightsUnlimited16ServicesProviderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited16ServicesProviderC6sharedACvgZ",
+                "mangledName": "$s18WLFlightsUnlimited16ServicesProviderC6sharedACvgZ",
+                "moduleName": "WLFlightsUnlimited",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deeplinkParseService",
+            "printedName": "deeplinkParseService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeeplinkParseService",
+                "printedName": "any WLFlightsUnlimited.DeeplinkParseService",
+                "usr": "s:18WLFlightsUnlimited20DeeplinkParseServiceP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18WLFlightsUnlimited16ServicesProviderC20deeplinkParseServiceAA08DeeplinkfG0_pvp",
+            "mangledName": "$s18WLFlightsUnlimited16ServicesProviderC20deeplinkParseServiceAA08DeeplinkfG0_pvp",
+            "moduleName": "WLFlightsUnlimited",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeeplinkParseService",
+                    "printedName": "any WLFlightsUnlimited.DeeplinkParseService",
+                    "usr": "s:18WLFlightsUnlimited20DeeplinkParseServiceP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18WLFlightsUnlimited16ServicesProviderC20deeplinkParseServiceAA08DeeplinkfG0_pvg",
+                "mangledName": "$s18WLFlightsUnlimited16ServicesProviderC20deeplinkParseServiceAA08DeeplinkfG0_pvg",
+                "moduleName": "WLFlightsUnlimited",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18WLFlightsUnlimited16ServicesProviderC",
+        "mangledName": "$s18WLFlightsUnlimited16ServicesProviderC",
+        "moduleName": "WLFlightsUnlimited",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

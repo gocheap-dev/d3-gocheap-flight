@@ -1,0 +1,80 @@
+[
+  {
+    "id": "51112",
+    "name": "Bogotá, Colombia",
+    "location": "",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "52059",
+    "iata": "BOG",
+    "deeplink_name": "Bogotá,Colombia",
+    "image": "https://content.r9cdn.net/rimg/dimg/a5/4f/80b8c5cf-city-52059-16442e6ec36.jpg?width=300&height=300&xhint=2143&yhint=2040&outputtype=WEBP&crop=true",
+    "country_code": "CO"
+  },
+  {
+    "id": "29230",
+    "name": "London, England, United Kingdom",
+    "location": "",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "28501",
+    "iata": "LON",
+    "deeplink_name": "London,England,United-Kingdom",
+    "image": "https://content.r9cdn.net/rimg/dimg/8a/d8/29dcb2f0-city-28501-189fedf72f2.jpg?width=300&height=300&xhint=1400&yhint=1181&outputtype=WEBP&crop=true",
+    "country_code": "GB"
+  },
+  {
+    "id": "175706",
+    "name": "Los Angeles International Airport",
+    "location": "Los Angeles, California, United States",
+    "type": "airport",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "16078",
+    "iata": "LAX",
+    "deeplink_name": "Los-Angeles,California,United-States",
+    "image": "https://content.r9cdn.net/rimg/dimg/a6/ae/d1a4a522-city-16078-190266aa26e.jpg?width=300&height=300&xhint=1430&yhint=902&outputtype=WEBP&crop=true",
+    "country_code": "US"
+  },
+  {
+    "id": "175485",
+    "name": "John F Kennedy International Airport",
+    "location": "New York, United States",
+    "type": "airport",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "15830",
+    "iata": "JFK",
+    "deeplink_name": "New-York,United-States",
+    "image": "https://content.r9cdn.net/rimg/dimg/8c/a9/d1b21b20-city-15830-16eb6a60801.jpg?width=300&height=300&xhint=1887&yhint=913&outputtype=WEBP&crop=true",
+    "country_code": "US"
+  },
+  {
+    "id": "174554",
+    "name": "Cape Town International Airport",
+    "location": "Cape Town, South Africa",
+    "type": "airport",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "26827",
+    "iata": "CPT",
+    "deeplink_name": "Cape-Town,South-Africa",
+    "image": "https://content.r9cdn.net/rimg/dimg/78/59/9614e2f0-city-26827-55c4d94e.jpg?width=300&height=300&xhint=2636&yhint=1668&outputtype=WEBP&crop=true",
+    "country_code": "ZA"
+  },
+  {
+    "id": "177772",
+    "name": "Dubai, United Arab Emirates",
+    "location": "Dubai Intl",
+    "type": "city",
+    "parent_id": null,
+    "id_type": "place_id",
+    "city_id": "6080",
+    "iata": "DXB",
+    "deeplink_name": "Dubai,United-Arab-Emirates",
+    "image": "https://content.r9cdn.net/rimg/dimg/9b/f7/7ab79f27-city-6080-158d0e1464c.jpg?width=300&height=300&xhint=1904&yhint=1457&outputtype=WEBP&crop=true",
+    "country_code": "AE"
+  }
+]

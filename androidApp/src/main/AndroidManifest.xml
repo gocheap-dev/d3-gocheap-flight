@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- The stay destination picker calls the hotel autocomplete endpoint. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+      Push. A runtime permission from Android 13 — below that it is implied, and declaring it does
+      nothing there either way. Asked for from MainActivity, once per install; see
+      PushNotifications.requestPermissionOnce.
+    -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".FlightTpApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <!--
+          singleTop so that a notification tapped while the app is already open is delivered to
+          the Activity that is running, through onNewIntent, instead of stacking a second copy of
+          it behind the first. The app is single-Activity, so nothing else is affected.
+        -->
+        <activity
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+          Receives a push while the app is running, and a changed registration token at any time.
+          Not exported: only the Play Services process sends it anything, and it does so by
+          permission rather than by this flag.
+        -->
+        <service
+            android:name=".push.FlightMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+          What the system draws a push with when it draws one itself — a message carrying a
+          `notification` payload, delivered while this app is in the background, which never
+          reaches FlightMessagingService. Without these three it uses the launcher icon (a grey
+          square, since only the alpha channel survives), no tint, and a channel called
+          "Miscellaneous".
+
+          The channel id must match PushNotifier.ChannelId, or a push would land in one channel in
+          the background and another in the foreground.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_push" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/push_notification_accent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="flighttp_default" />
+
+        <!--
+          The Travelpayouts SDK's screens are AppCompat Activities and its .aar declares them with
+          no theme of their own, so they inherit this app's — which is not an AppCompat descendant
+          and makes them throw on launch. Pointed at the SDK's own theme here rather than by
+          changing the application theme, which would restyle this app's windows to suit a library
+          the user only ever sees after tapping Search.
+        -->
+        <activity
+            android:name="com.travelapp.sdk.TravelSdkActivity"
+            android:theme="@style/TravelSdkResultsTheme"
+            tools:node="merge" />
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The same curve `NavMotion.Emphasized` animates the in-app pages on: a slow, confident start and
+  a long settle. Spelled out here because an Activity transition is resolved by the window manager
+  from resources, with no way to reach the Compose easing the rest of the app shares.
+-->
+<pathInterpolator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:controlX1="0.2"
+    android:controlY1="0"
+    android:controlX2="0"
+    android:controlY2="1" />

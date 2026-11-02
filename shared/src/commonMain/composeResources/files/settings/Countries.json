@@ -1,0 +1,3895 @@
+[
+  {
+    "name": "Anguilla",
+    "code": "AI",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇮",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "currency": {
+      "code": "ALL",
+      "symbol": "Lek",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇱",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "currency": {
+      "code": "AMD",
+      "symbol": "դր.",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "currency": {
+      "code": "AOA",
+      "symbol": "Kz",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇴",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Antarctica",
+    "code": "AQ",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇶",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "currency": {
+      "code": "ARS",
+      "symbol": "$",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇷",
+    "domain": "https://www.kayak.com.ar/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "American Samoa",
+    "code": "AS",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇹",
+    "domain": "https://www.at.kayak.com/",
+    "supported_languages": [
+      "de"
+    ]
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "currency": {
+      "code": "AUD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇺",
+    "domain": "https://www.kayak.com.au/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Aruba",
+    "code": "AW",
+    "currency": {
+      "code": "AWG",
+      "symbol": "Afl.",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "currency": {
+      "code": "AZN",
+      "symbol": "₼",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇿",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "currency": {
+      "code": "BBD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇧",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD",
+    "currency": {
+      "code": "BDT",
+      "symbol": "BDT",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇩",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇪",
+    "domain": "https://www.be.kayak.com/",
+    "supported_languages": [
+      "fr",
+      "nl"
+    ]
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BF",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇫",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "currency": {
+      "code": "BGN",
+      "symbol": "лв.",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "currency": {
+      "code": "BHD",
+      "symbol": "د.ب.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 3
+    },
+    "flag": "🇧🇭",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Burundi",
+    "code": "BI",
+    "currency": {
+      "code": "BIF",
+      "symbol": "FBu",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇧🇮",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Benin",
+    "code": "BJ",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇯",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Saint Barthelemy",
+    "code": "BL",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇱",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "currency": {
+      "code": "BMD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Brunei",
+    "code": "BN",
+    "currency": {
+      "code": "BND",
+      "symbol": "$",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Bolivia",
+    "code": "BO",
+    "currency": {
+      "code": "BOB",
+      "symbol": "Bs",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇴",
+    "domain": "https://www.kayak.bo/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "currency": {
+      "code": "BRL",
+      "symbol": "R$",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇷",
+    "domain": "https://www.kayak.com.br/",
+    "supported_languages": [
+      "pt"
+    ]
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS",
+    "currency": {
+      "code": "BSD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇸",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Bhutan",
+    "code": "BT",
+    "currency": {
+      "code": "BTN",
+      "symbol": "Nu.",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "currency": {
+      "code": "BWP",
+      "symbol": "P",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "currency": {
+      "code": "BYN",
+      "symbol": "Br",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇾",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "currency": {
+      "code": "BZD",
+      "symbol": "BZ$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇿",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "currency": {
+      "code": "CAD",
+      "symbol": "C$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇦",
+    "domain": "https://www.ca.kayak.com/",
+    "supported_languages": [
+      "en",
+      "fr"
+    ]
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "code": "CC",
+    "currency": {
+      "code": "AUD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "DR Congo",
+    "code": "CD",
+    "currency": {
+      "code": "CDF",
+      "symbol": "FC",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CF",
+    "currency": {
+      "code": "XAF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇫",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Congo",
+    "code": "CG",
+    "currency": {
+      "code": "XAF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "currency": {
+      "code": "CHF",
+      "symbol": "CHF",
+      "thousands_separator": "'",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇭",
+    "domain": "https://www.kayak.ch/",
+    "supported_languages": [
+      "fr",
+      "de"
+    ]
+  },
+  {
+    "name": "Ivory Coast",
+    "code": "CI",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Cook Islands",
+    "code": "CK",
+    "currency": {
+      "code": "NZD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇰",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "currency": {
+      "code": "CLP",
+      "symbol": "$",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇱",
+    "domain": "https://www.kayak.cl/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Cameroon",
+    "code": "CM",
+    "currency": {
+      "code": "XAF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "currency": {
+      "code": "CNY",
+      "symbol": "¥",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇳",
+    "domain": "https://www.cn.kayak.com/",
+    "supported_languages": [
+      "zh"
+    ]
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "currency": {
+      "code": "COP",
+      "symbol": "$",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇴",
+    "domain": "https://www.kayak.com.co/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "currency": {
+      "code": "CUP",
+      "symbol": "$MN",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Cape Verde",
+    "code": "CV",
+    "currency": {
+      "code": "CVE",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇻",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Curacao",
+    "code": "CW",
+    "currency": {
+      "code": "XCG",
+      "symbol": "Cg",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Christmas Island",
+    "code": "CX",
+    "currency": {
+      "code": "AUD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇽",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇾",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "currency": {
+      "code": "CZK",
+      "symbol": "Kč",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇿",
+    "domain": "https://www.cz.kayak.com/",
+    "supported_languages": [
+      "cs"
+    ]
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇩🇪",
+    "domain": "https://www.kayak.de/",
+    "supported_languages": [
+      "de",
+      "en"
+    ]
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "currency": {
+      "code": "DJF",
+      "symbol": "Fdj",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇩🇯",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "currency": {
+      "code": "DKK",
+      "symbol": "kr.",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇩🇰",
+    "domain": "https://www.kayak.dk/",
+    "supported_languages": [
+      "da"
+    ]
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇩🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "currency": {
+      "code": "DZD",
+      "symbol": "د.ج.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇩🇿",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇪🇨",
+    "domain": "https://www.kayak.com.ec/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇪🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "currency": {
+      "code": "EGP",
+      "symbol": "ج.م.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇪🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Eritrea",
+    "code": "ER",
+    "currency": {
+      "code": "ERN",
+      "symbol": "Nfk",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇪🇷",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇪🇸",
+    "domain": "https://www.kayak.es/",
+    "supported_languages": [
+      "es",
+      "ca"
+    ]
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ET",
+    "currency": {
+      "code": "ETB",
+      "symbol": "Br",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇪🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇫🇮",
+    "domain": "https://www.fi.kayak.com/",
+    "supported_languages": [
+      "fi"
+    ]
+  },
+  {
+    "name": "Fiji",
+    "code": "FJ",
+    "currency": {
+      "code": "FJD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇫🇯",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Falkland Islands",
+    "code": "FK",
+    "currency": {
+      "code": "GBP",
+      "symbol": "£",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Micronesia",
+    "code": "FM",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Faroe Islands",
+    "code": "FO",
+    "currency": {
+      "code": "DKK",
+      "symbol": "kr.",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇫🇴",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇫🇷",
+    "domain": "https://www.kayak.fr/",
+    "supported_languages": [
+      "fr"
+    ]
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "currency": {
+      "code": "XAF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇦",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇩",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "currency": {
+      "code": "GEL",
+      "symbol": "₾",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Guernsey",
+    "code": "GG",
+    "currency": {
+      "code": "GBP",
+      "symbol": "£",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "currency": {
+      "code": "GHS",
+      "symbol": "GH¢",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇭",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Gibraltar",
+    "code": "GI",
+    "currency": {
+      "code": "GIP",
+      "symbol": "£",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇮",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Greenland",
+    "code": "GL",
+    "currency": {
+      "code": "DKK",
+      "symbol": "kr.",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇱",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Gambia",
+    "code": "GM",
+    "currency": {
+      "code": "GMD",
+      "symbol": "D",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Guinea",
+    "code": "GN",
+    "currency": {
+      "code": "GNF",
+      "symbol": "FG",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇬🇳",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Guadeloupe",
+    "code": "GP",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇵",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "currency": {
+      "code": "XAF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇶",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇷",
+    "domain": "https://www.gr.kayak.com/",
+    "supported_languages": [
+      "el"
+    ]
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "currency": {
+      "code": "GTQ",
+      "symbol": "Q",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇹",
+    "domain": "https://www.kayak.com.gt/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Guam",
+    "code": "GU",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GW",
+    "currency": {
+      "code": "GNF",
+      "symbol": "FG",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇬🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Guyana",
+    "code": "GY",
+    "currency": {
+      "code": "GYD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇾",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "currency": {
+      "code": "HKD",
+      "symbol": "HK$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇭🇰",
+    "domain": "https://www.kayak.com.hk/",
+    "supported_languages": [
+      "en",
+      "zh"
+    ]
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "currency": {
+      "code": "HNL",
+      "symbol": "L.",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇭🇳",
+    "domain": "https://www.kayak.com.hn/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇭🇷",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Haiti",
+    "code": "HT",
+    "currency": {
+      "code": "HTG",
+      "symbol": "G",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇭🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "currency": {
+      "code": "HUF",
+      "symbol": "Ft",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇭🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "currency": {
+      "code": "IDR",
+      "symbol": "Rp",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇮🇩",
+    "domain": "https://www.kayak.co.id/",
+    "supported_languages": [
+      "in",
+      "en"
+    ]
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇮🇪",
+    "domain": "https://www.kayak.ie/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇮🇱",
+    "domain": "https://www.il.kayak.com/",
+    "supported_languages": [
+      "en",
+      "iw"
+    ]
+  },
+  {
+    "name": "India",
+    "code": "IN",
+    "currency": {
+      "code": "INR",
+      "symbol": "₹",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇮🇳",
+    "domain": "https://www.kayak.co.in/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Iraq",
+    "code": "IQ",
+    "currency": {
+      "code": "IQD",
+      "symbol": "د.ع.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇮🇶",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Iran",
+    "code": "IR",
+    "currency": {
+      "code": "IRR",
+      "symbol": "ريال",
+      "thousands_separator": ",",
+      "decimal_separator": "/",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "currency": {
+      "code": "ISK",
+      "symbol": "kr.",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 0
+    },
+    "flag": "🇮🇸",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇮🇹",
+    "domain": "https://www.kayak.it/",
+    "supported_languages": [
+      "it"
+    ]
+  },
+  {
+    "name": "Jamaica",
+    "code": "JM",
+    "currency": {
+      "code": "JMD",
+      "symbol": "J$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇯🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "currency": {
+      "code": "JOD",
+      "symbol": "د.ا.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 3
+    },
+    "flag": "🇯🇴",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "currency": {
+      "code": "JPY",
+      "symbol": "¥",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇯🇵",
+    "domain": "https://www.kayak.co.jp/",
+    "supported_languages": [
+      "ja"
+    ]
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "currency": {
+      "code": "KES",
+      "symbol": "S",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "currency": {
+      "code": "KHR",
+      "symbol": "KHR",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇭",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Kiribati",
+    "code": "KI",
+    "currency": {
+      "code": "AUD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇮",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Comoros",
+    "code": "KM",
+    "currency": {
+      "code": "KMF",
+      "symbol": "CF",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇳",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "North Korea",
+    "code": "KP",
+    "currency": {
+      "code": "KPW",
+      "symbol": "₩",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "South Korea",
+    "code": "KR",
+    "currency": {
+      "code": "KRW",
+      "symbol": "₩",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "",
+    "domain": "https://www.kayak.co.kr/",
+    "supported_languages": [
+      "ko"
+    ]
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "currency": {
+      "code": "KWD",
+      "symbol": "د.ك.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 3
+    },
+    "flag": "🇰🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "currency": {
+      "code": "KYD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇾",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "currency": {
+      "code": "KZT",
+      "symbol": "Т",
+      "thousands_separator": " ",
+      "decimal_separator": "-",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇿",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Laos",
+    "code": "LA",
+    "currency": {
+      "code": "LAK",
+      "symbol": "₭",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Lebanon",
+    "code": "LB",
+    "currency": {
+      "code": "LBP",
+      "symbol": "ل.ل.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇧",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LI",
+    "currency": {
+      "code": "CHF",
+      "symbol": "CHF",
+      "thousands_separator": "'",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇮",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "currency": {
+      "code": "LKR",
+      "symbol": "Rp",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇰",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "currency": {
+      "code": "LRD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇷",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "currency": {
+      "code": "LSL",
+      "symbol": "M",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇸",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇻",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Libya",
+    "code": "LY",
+    "currency": {
+      "code": "LYD",
+      "symbol": "د.ل.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 3
+    },
+    "flag": "🇱🇾",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇦",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Monaco",
+    "code": "MC",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "currency": {
+      "code": "SAR",
+      "symbol": "SAR",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇦",
+    "domain": "https://www.kayak.sa/",
+    "supported_languages": [
+      "ar",
+      "en"
+    ]
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SB",
+    "currency": {
+      "code": "SBD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇧",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "currency": {
+      "code": "SCR",
+      "symbol": "Rs",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇳",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Tonga",
+    "code": "TO",
+    "currency": {
+      "code": "TOP",
+      "symbol": "T$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇴",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Türkiye",
+    "code": "TR",
+    "currency": {
+      "code": "TRY",
+      "symbol": "TL",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": "https://www.kayak.com.tr/",
+    "supported_languages": [
+      "tr"
+    ]
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "currency": {
+      "code": "TTD",
+      "symbol": "TT$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Tuvalu",
+    "code": "TV",
+    "currency": {
+      "code": "AUD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇻",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Taiwan",
+    "code": "TW",
+    "currency": {
+      "code": "TWD",
+      "symbol": "NT$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": "https://www.tw.kayak.com/",
+    "supported_languages": [
+      "zh"
+    ]
+  },
+  {
+    "name": "Tanzania",
+    "code": "TZ",
+    "currency": {
+      "code": "TZS",
+      "symbol": "TSh",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "currency": {
+      "code": "UAH",
+      "symbol": "грн.",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇺🇦",
+    "domain": "https://www.ua.kayak.com/",
+    "supported_languages": [
+      "uk"
+    ]
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "currency": {
+      "code": "UGX",
+      "symbol": "USh",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇺🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "currency": {
+      "code": "ZAR",
+      "symbol": "R",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇿🇦",
+    "domain": "https://www.za.kayak.com/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "currency": {
+      "code": "ZMW",
+      "symbol": "ZK",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇿🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇿🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "currency": {
+      "code": "KGS",
+      "symbol": "сом",
+      "thousands_separator": " ",
+      "decimal_separator": "-",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇰🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Andorra",
+    "code": "AD",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇩",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "currency": {
+      "code": "AED",
+      "symbol": "AED",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇪",
+    "domain": "https://www.kayak.ae/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Afghanistan",
+    "code": "AF",
+    "currency": {
+      "code": "AFN",
+      "symbol": "AFN",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇦🇫",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "currency": {
+      "code": "BAM",
+      "symbol": "КМ",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇧🇦",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Caribbean Netherlands",
+    "code": "BQ",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "LC",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇱🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "currency": {
+      "code": "CRC",
+      "symbol": "₡",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇨🇷",
+    "domain": "https://www.kayak.co.cr/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "currency": {
+      "code": "DOP",
+      "symbol": "RD$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇩🇴",
+    "domain": "https://www.kayak.com.do/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "French Guiana",
+    "code": "GF",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇫",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "South Georgia & South Sandwich Islands",
+    "code": "GS",
+    "currency": {
+      "code": "GBP",
+      "symbol": "£",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Moldova",
+    "code": "MD",
+    "currency": {
+      "code": "MDL",
+      "symbol": "lei",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "currency": {
+      "code": "MGA",
+      "symbol": "Ar",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇲🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MH",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇭",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "North Macedonia",
+    "code": "MK",
+    "currency": {
+      "code": "MKD",
+      "symbol": "ден.",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Mali",
+    "code": "ML",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇱",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM",
+    "currency": {
+      "code": "MMK",
+      "symbol": "K",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "currency": {
+      "code": "MNT",
+      "symbol": "₮",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇳",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Macau",
+    "code": "MO",
+    "currency": {
+      "code": "MOP",
+      "symbol": "MOP$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "code": "MP",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇵",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Martinique",
+    "code": "MQ",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇶",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Mauritania",
+    "code": "MR",
+    "currency": {
+      "code": "MRU",
+      "symbol": "UM",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇷",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇸",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Mauritius",
+    "code": "MU",
+    "currency": {
+      "code": "MUR",
+      "symbol": "Rs",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Maldives",
+    "code": "MV",
+    "currency": {
+      "code": "MVR",
+      "symbol": "MVR",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇻",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "currency": {
+      "code": "MWK",
+      "symbol": "MK",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "currency": {
+      "code": "MXN",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇽",
+    "domain": "https://www.kayak.com.mx/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "currency": {
+      "code": "MYR",
+      "symbol": "RM",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇾",
+    "domain": "https://www.kayak.com.my/",
+    "supported_languages": [
+      "en",
+      "ms"
+    ]
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "currency": {
+      "code": "MZN",
+      "symbol": "MT",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇲🇿",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Namibia",
+    "code": "NA",
+    "currency": {
+      "code": "NAD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇦",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NC",
+    "currency": {
+      "code": "XPF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "currency": {
+      "code": "NIO",
+      "symbol": "C$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇮",
+    "domain": "https://www.kayak.com.ni/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇱",
+    "domain": "https://www.kayak.nl/",
+    "supported_languages": [
+      "nl"
+    ]
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "currency": {
+      "code": "NOK",
+      "symbol": "kr",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇴",
+    "domain": "https://www.kayak.no/",
+    "supported_languages": [
+      "no"
+    ]
+  },
+  {
+    "name": "Nepal",
+    "code": "NP",
+    "currency": {
+      "code": "NPR",
+      "symbol": "रु",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇵",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Nauru",
+    "code": "NR",
+    "currency": {
+      "code": "AUD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇷",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Niue",
+    "code": "NU",
+    "currency": {
+      "code": "NZD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "currency": {
+      "code": "NZD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇿",
+    "domain": "https://www.nz.kayak.com/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "currency": {
+      "code": "OMR",
+      "symbol": "ر.ع.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 3
+    },
+    "flag": "🇴🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "currency": {
+      "code": "PAB",
+      "symbol": "B/.",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇦",
+    "domain": "https://www.kayak.com.pa/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "currency": {
+      "code": "PEN",
+      "symbol": "S/.",
+      "thousands_separator": ".",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇪",
+    "domain": "https://www.kayak.com.pe/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PF",
+    "currency": {
+      "code": "XPF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇫",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "currency": {
+      "code": "PGK",
+      "symbol": "K",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "currency": {
+      "code": "PHP",
+      "symbol": "P",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇭",
+    "domain": "https://www.kayak.com.ph/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Pakistan",
+    "code": "PK",
+    "currency": {
+      "code": "PKR",
+      "symbol": "Rs",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇰",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "currency": {
+      "code": "PLN",
+      "symbol": "zł",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇱",
+    "domain": "https://www.kayak.pl/",
+    "supported_languages": [
+      "pl"
+    ]
+  },
+  {
+    "name": "St. Pierre and Miquelon",
+    "code": "PM",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇷",
+    "domain": "https://www.kayak.com.pr/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Palestinian Territories",
+    "code": "PS",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇹",
+    "domain": "https://www.kayak.pt/",
+    "supported_languages": [
+      "pt"
+    ]
+  },
+  {
+    "name": "Palau",
+    "code": "PW",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇼",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Paraguay",
+    "code": "PY",
+    "currency": {
+      "code": "PYG",
+      "symbol": "Gs",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇵🇾",
+    "domain": "https://www.kayak.com.py/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "currency": {
+      "code": "QAR",
+      "symbol": "ر.ق.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇶🇦",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Reunion",
+    "code": "RE",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇷🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "currency": {
+      "code": "RON",
+      "symbol": "lei",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇷🇴",
+    "domain": "https://www.ro.kayak.com/",
+    "supported_languages": [
+      "ro"
+    ]
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "currency": {
+      "code": "RSD",
+      "symbol": "Дин.",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇷🇸",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Russia",
+    "code": "RU",
+    "currency": {
+      "code": "RUB",
+      "symbol": "₽",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "currency": {
+      "code": "SDG",
+      "symbol": "ج.س.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇩",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "currency": {
+      "code": "SEK",
+      "symbol": "SEK",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇪",
+    "domain": "https://www.kayak.se/",
+    "supported_languages": [
+      "sv"
+    ]
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "currency": {
+      "code": "SGD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇬",
+    "domain": "https://www.kayak.sg/",
+    "supported_languages": [
+      "en",
+      "zh"
+    ]
+  },
+  {
+    "name": "St. Helena",
+    "code": "SH",
+    "currency": {
+      "code": "SHP",
+      "symbol": "£",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇮",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇰",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "currency": {
+      "code": "SLE",
+      "symbol": "Le",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇱",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Senegal",
+    "code": "SN",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇳",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Somalia",
+    "code": "SO",
+    "currency": {
+      "code": "SOS",
+      "symbol": "S",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇴",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Suriname",
+    "code": "SR",
+    "currency": {
+      "code": "SRD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇷",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "South Sudan",
+    "code": "SS",
+    "currency": {
+      "code": "SDG",
+      "symbol": "ج.س.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇸",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "ST",
+    "currency": {
+      "code": "STN",
+      "symbol": "Db",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇸🇻",
+    "domain": "https://www.kayak.com.sv/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "St Maarten",
+    "code": "SX",
+    "currency": {
+      "code": "XCG",
+      "symbol": "Cg",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Syria",
+    "code": "SY",
+    "currency": {
+      "code": "SYP",
+      "symbol": "ل.س.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Eswatini",
+    "code": "SZ",
+    "currency": {
+      "code": "SZL",
+      "symbol": "E",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "code": "TC",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Chad",
+    "code": "TD",
+    "currency": {
+      "code": "XAF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇩",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Togo",
+    "code": "TG",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "currency": {
+      "code": "THB",
+      "symbol": "฿",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇭",
+    "domain": "https://www.kayak.co.th/",
+    "supported_languages": [
+      "th",
+      "en"
+    ]
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "currency": {
+      "code": "TJS",
+      "symbol": "TJS",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇯",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "East Timor",
+    "code": "TL",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": []
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "currency": {
+      "code": "TMT",
+      "symbol": "m",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇹🇲",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "currency": {
+      "code": "GBP",
+      "symbol": "£",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇬🇧",
+    "domain": "https://www.kayak.co.uk/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "United States",
+    "code": "US",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇺🇸",
+    "domain": "https://www.kayak.com/",
+    "supported_languages": [
+      "en"
+    ]
+  },
+  {
+    "name": "Uruguay",
+    "code": "UY",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇺🇾",
+    "domain": "https://www.kayak.com.uy/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "currency": {
+      "code": "UZS",
+      "symbol": "сўм",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇺🇿",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Vatican City",
+    "code": "VA",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "currency": {
+      "code": "XCD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇻🇨",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Venezuela",
+    "code": "VE",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": "https://www.kayak.co.ve/",
+    "supported_languages": [
+      "es"
+    ]
+  },
+  {
+    "name": "British Virgin Islands",
+    "code": "VG",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "US Virgin Islands",
+    "code": "VI",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "currency": {
+      "code": "VND",
+      "symbol": "₫",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 1
+    },
+    "flag": "",
+    "domain": "https://www.vn.kayak.com/",
+    "supported_languages": [
+      "en",
+      "vi"
+    ]
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VU",
+    "currency": {
+      "code": "VUV",
+      "symbol": "VT",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 0
+    },
+    "flag": "🇻🇺",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Wallis and Futuna Islands",
+    "code": "WF",
+    "currency": {
+      "code": "XPF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "currency": {
+      "code": "WST",
+      "symbol": "WS$",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇼🇸",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Kosovo",
+    "code": "XK",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Yemen",
+    "code": "YE",
+    "currency": {
+      "code": "YER",
+      "symbol": "ر.ي.‏",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇾🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Mayotte",
+    "code": "YT",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "thousands_separator": ".",
+      "decimal_separator": ",",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇾🇹",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Niger",
+    "code": "NE",
+    "currency": {
+      "code": "XOF",
+      "symbol": "F",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": false,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇪",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "currency": {
+      "code": "NGN",
+      "symbol": "₦",
+      "thousands_separator": ",",
+      "decimal_separator": ".",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": false,
+      "decimal_digits": 2
+    },
+    "flag": "🇳🇬",
+    "domain": null,
+    "supported_languages": null
+  },
+  {
+    "name": "Rwanda",
+    "code": "RW",
+    "currency": {
+      "code": "RWF",
+      "symbol": "RWF",
+      "thousands_separator": " ",
+      "decimal_separator": ",",
+      "symbol_on_left": true,
+      "space_between_amount_and_symbol": true,
+      "decimal_digits": 2
+    },
+    "flag": "🇷🇼",
+    "domain": null,
+    "supported_languages": null
+  }
+]

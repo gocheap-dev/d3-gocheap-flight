@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The tint the system applies to a push's small icon and to its app name line.
+
+      FlightColors.Primary verbatim, the same blue the rest of the app is drawn in. An Android
+      colour resource rather than a reference to the shared theme, because the system reads this
+      out of the manifest before any of this app's code — let alone Compose — has run.
+    -->
+    <color name="push_notification_accent">#FF2F6BF6</color>
+</resources>

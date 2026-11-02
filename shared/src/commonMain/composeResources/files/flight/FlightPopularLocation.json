@@ -1,0 +1,68 @@
+[
+  {
+    "name": "London, England, United Kingdom",
+    "location": "All airports",
+    "type": "city",
+    "iata": "LON",
+    "parent_iata": null,
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/8a/d8/29dcb2f0-city-28501-189fedf72f2.jpg?width=300&height=300&xhint=1400&yhint=1181&outputtype=JPEG&crop=true",
+      "https://content.r9cdn.net/rimg/dimg/8a/d8/29dcb2f0-city-28501-189fedf72f2.jpg?width=300&height=300&xhint=1400&yhint=1181&outputtype=WEBP&crop=true"
+    ]
+  },
+  {
+    "name": "Istanbul, Turkey",
+    "location": "All airports",
+    "type": "city",
+    "iata": "IST",
+    "parent_iata": null,
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/d2/71/8a9758f3-city-3430-163cc469939.jpg?width=300&height=300&xhint=1842&yhint=996&outputtype=JPEG&crop=true",
+      "https://content.r9cdn.net/rimg/dimg/d2/71/8a9758f3-city-3430-163cc469939.jpg?width=300&height=300&xhint=1842&yhint=996&outputtype=WEBP&crop=true"
+    ]
+  },
+  {
+    "name": "Bangkok, Thailand",
+    "location": "All airports",
+    "type": "city",
+    "iata": "BKK",
+    "parent_iata": null,
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/21/e1/c054fc24-city-26166-176726042eb.jpg?width=300&height=300&xhint=2881&yhint=1499&outputtype=JPEG&crop=true",
+      "https://content.r9cdn.net/rimg/dimg/21/e1/c054fc24-city-26166-176726042eb.jpg?width=300&height=300&xhint=2881&yhint=1499&outputtype=WEBP&crop=true"
+    ]
+  },
+  {
+    "name": "Paris, France",
+    "location": "All airports",
+    "type": "city",
+    "iata": "PAR",
+    "parent_iata": null,
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/bd/d1/2f268866-city-36014-189fed5d0cf.jpg?width=300&height=300&xhint=1689&yhint=931&outputtype=JPEG&crop=true",
+      "https://content.r9cdn.net/rimg/dimg/bd/d1/2f268866-city-36014-189fed5d0cf.jpg?width=300&height=300&xhint=1689&yhint=931&outputtype=WEBP&crop=true"
+    ]
+  },
+  {
+    "name": "Indira Gandhi International Airport",
+    "location": "New Delhi, National Capital Territory of India, India",
+    "type": "airport",
+    "iata": "DEL",
+    "parent_iata": null,
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/6d/77/0cc45283-city-32821-176ddb032b7.jpg?width=300&height=300&xhint=1769&yhint=1931&outputtype=JPEG&crop=true",
+      "https://content.r9cdn.net/rimg/dimg/6d/77/0cc45283-city-32821-176ddb032b7.jpg?width=300&height=300&xhint=1769&yhint=1931&outputtype=WEBP&crop=true"
+    ]
+  },
+  {
+    "name": "Dubai, United Arab Emirates",
+    "location": "All airports",
+    "type": "city",
+    "iata": "DXB",
+    "parent_iata": null,
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/9b/f7/7ab79f27-city-6080-158d0e1464c.jpg?width=300&height=300&xhint=1904&yhint=1457&outputtype=JPEG&crop=true",
+      "https://content.r9cdn.net/rimg/dimg/9b/f7/7ab79f27-city-6080-158d0e1464c.jpg?width=300&height=300&xhint=1904&yhint=1457&outputtype=WEBP&crop=true"
+    ]
+  }
+]

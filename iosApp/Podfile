@@ -1,0 +1,71 @@
+# The Travelpayouts SDK ships as a CocoaPods dependency and nothing else — there is no Swift
+# Package — so the iOS app gains a Podfile for it. Run `pod install` here and open
+# `iosApp.xcworkspace` from then on; the bare `.xcodeproj` will no longer link.
+#
+# The shared Kotlin framework is untouched by this: it is still embedded by the project's own
+# "Compile Kotlin Framework" build phase, which CocoaPods leaves alone.
+#
+# Android is a separate integration (an .aar, configured in `FlightTpApplication`) and shares
+# nothing with this file.
+
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+# What the pods are built against — not the app's own deployment target, which is higher, and a pod
+# may sit below it.
+#
+# 15 because Xcode 26 dropped support for building anything below it and refuses the whole Pods
+# project over it — every pod target fails before a line is compiled. The SDK asks only for 14.
+minimum_ios_version = '15.0'
+
+platform :ios, minimum_ios_version
+
+travelpayouts_sdk_version = '1.8.1'
+travelpayouts_sdk_source = 'https://github.com/travelpayouts/sdk-ios'
+
+target 'iosApp' do
+  # GA4. The shared Kotlin module cannot reference a pod, so it reports through a sink that
+  # `FlightAnalyticsBridge.swift` registers into at launch — see `AnalyticsHandoff` on the Kotlin
+  # side. These two subspecs only: the umbrella `Firebase` pod would pull a great deal that is not
+  # used here.
+  pod 'Firebase/Analytics'
+
+  # Crash reporting, through the same kind of sink — `FlightCrashReportingBridge.swift` and
+  # `CrashHandoff`. Note that this pod is only half the integration: the dSYM a release crash has
+  # to be symbolicated through is uploaded by the "[Firebase] Upload Crashlytics Symbols" build
+  # phase in iosApp.xcodeproj, which runs the script this pod installs.
+  pod 'Firebase/Crashlytics'
+
+  # Push, through the same kind of sink — `FlightPushBridge.swift` and `PushHandoff`. Only the
+  # registration token and the topic subscriptions come from here: the permission dialog and the
+  # APNs registration are plain UserNotifications and UIKit, which the shared Kotlin module calls
+  # for itself.
+  pod 'Firebase/Messaging'
+
+  # Flights only. The SDK's default subspecs also pull Information — its own settings and about
+  # pages — which this app already draws itself on the Profile tab.
+  pod 'WLSDK/Flights', :git => travelpayouts_sdk_source, :tag => travelpayouts_sdk_version
+
+  # The results screen on its own, without the SDK's flights home screen in front of it. It is
+  # not in the tagged repository above — Travelpayouts hands it out separately — so it is
+  # vendored from this repository instead; see the podspec for why it cannot simply be dropped
+  # into Pods/. Delete this line and `Vendor/WLFlightsUnlimited/` if a future WLSDK tag ships it.
+  pod 'WLFlightsUnlimited', :path => 'Vendor/WLFlightsUnlimited'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # Raised to the floor, never lowered to it: a pod that already asks for more than this knows
+      # something we do not.
+      current = config.build_settings['IPHONEOS_DEPLOYMENT_TARGET']
+      if current.nil? || Gem::Version.new(current.to_s) < Gem::Version.new(minimum_ios_version)
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = minimum_ios_version
+      end
+      # What the SDK's integration guide asks for: its binaries are built for library evolution.
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
+
+end

@@ -1,0 +1,4 @@
+framework module WLFlightsUnlimited {
+  header "WLFlightsUnlimited-Swift.h"
+  requires objc
+}
