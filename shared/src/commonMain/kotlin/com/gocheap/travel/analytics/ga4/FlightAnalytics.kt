@@ -212,6 +212,9 @@ object FlightAnalytics {
      * exit is: GA4 counts them for the dashboard, the backend counts them for the payout, and an
      * exit recorded in one but not the other is a reconciliation problem later.
      *
+     * [adClick] fires this event too, for an ad tap, and pairs with `SessionTracking.adClick` in
+     * exactly the same way — the invariant holds there as well.
+     *
      * [exit] is how the search left — the SDK's screen, a supplier's own page, or results this app
      * drew — which for flights is the backend's decision per search and not this build's.
      */
@@ -243,6 +246,91 @@ object FlightAnalytics {
                 put(AnalyticsEvent.PRICE, price)
                 put(AnalyticsEvent.INDEX, index)
                 put(AnalyticsEvent.SCREEN_NAME, AnalyticsEvent.RESULT_SCREEN)
+                putAll(regionParams())
+            },
+        )
+    }
+
+    /* -------------------------------------- Ads ---------------------------------------- */
+
+    /**
+     * An inline ad reaching the screen.
+     *
+     * Fire once per ad actually seen, beside `AdsRepository.trackImpression` and never instead of
+     * it. The two are not alternatives: the host's own impression URL is what the publisher is
+     * paid on, and this is what says, in the same dashboard as every other event, which placement
+     * and which route produced the view. An ad reported to one and not the other is a
+     * reconciliation problem at the end of the month.
+     *
+     * [placement] is [AnalyticsEvent.POPUP_AD] or [AnalyticsEvent.NATIVE_AD] — the two are the
+     * same ad from the same call, and where it was shown is the whole of the difference between
+     * them in a report.
+     *
+     * The route travels as origin and destination because an ad is sold against a route: "which
+     * routes are worth showing an ad on" is the question this event exists to answer, and a count
+     * alone cannot.
+     */
+    fun adImpression(
+        placement: String,
+        provider: String?,
+        origin: String?,
+        destination: String?,
+    ) {
+        log(
+            AnalyticsEvent.AD_IMPRESSION_NATIVE,
+            buildMap {
+                put(AnalyticsEvent.TYPE, placement)
+                put(AnalyticsEvent.PROVIDER, provider)
+                put(AnalyticsEvent.LOCATION, origin)
+                put(AnalyticsEvent.ARRIVAL_LOCATION, destination)
+                putAll(regionParams())
+            },
+        )
+    }
+
+    /**
+     * An inline ad being tapped.
+     *
+     * Fires two events, which is the reference app's arrangement and worth keeping: the ad event
+     * for the ad reports, and [AnalyticsEvent.EXIT_CLICK] so that a tap on an ad appears in the
+     * same funnel as every other way the user leaves for a supplier. An ad that did not show up
+     * there would make the exit count read low by however much the ads earn.
+     *
+     * **Pair it with `SessionTracking.adClick`,** like every other exit — the reference app sends
+     * a session row for an ad tap too, under its own `type = "ads"`, so that ad revenue can be
+     * told apart from search revenue at the backend. GA4 counts the tap for the dashboard and the
+     * session row counts it for the payout; an ad recorded in one but not the other is the same
+     * reconciliation problem [exitClick] describes.
+     *
+     * [buttonText] is the ad's own call to action, which the host chooses per creative — it is
+     * what says whether "View deal" outperforms "Book now".
+     */
+    fun adClick(
+        placement: String,
+        provider: String?,
+        buttonText: String?,
+        screenName: String,
+        origin: String?,
+        destination: String?,
+    ) {
+        log(
+            AnalyticsEvent.AD_CLICK_NATIVE,
+            buildMap {
+                put(AnalyticsEvent.TYPE, placement)
+                put(AnalyticsEvent.PROVIDER, provider)
+                put(AnalyticsEvent.TEXT, buttonText)
+                put(AnalyticsEvent.LOCATION, origin)
+                put(AnalyticsEvent.ARRIVAL_LOCATION, destination)
+                putAll(regionParams())
+            },
+        )
+        log(
+            AnalyticsEvent.EXIT_CLICK,
+            buildMap {
+                // The placement, where a vertical would go on every other exit: an ad is not one
+                // of the three verticals, and calling it "flight" would hide it inside them.
+                put(AnalyticsEvent.TYPE, placement)
+                put(AnalyticsEvent.SCREEN_NAME, screenName)
                 putAll(regionParams())
             },
         )

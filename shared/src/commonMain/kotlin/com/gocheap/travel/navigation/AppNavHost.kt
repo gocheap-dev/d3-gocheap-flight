@@ -542,6 +542,13 @@ private fun AppNavGraph(
                     SelectedFlightDeal.set(deal)
                     navController.navigate(AppRoute.FlightDeal.route)
                 },
+                // An ad goes to the same web view a deal does: both are a supplier's own page,
+                // and the reference app's separate ad screen exists only because its deal page is
+                // not one. The URL arrives already resolved — see FlightApiResultsViewModel.
+                onOpenAd = { url, advertiser ->
+                    SelectedFlightDeal.set(url, advertiser)
+                    navController.navigate(AppRoute.FlightDeal.route)
+                },
                 onPickOrigin = { draft ->
                     navController.openLocationPicker(
                         LocationRequest(

@@ -20,7 +20,7 @@ internal data class RegionDto(
     @SerialName("code") val code: String? = null,
     @SerialName("currency") val currency: RegionCurrencyDto? = null,
     @SerialName("flag") val flag: String? = null,
-    /** The supplier's own site for this country. Unused today; kept so a refresh does not lose it. */
+    /** The supplier's own site for this country — what an ad's relative URLs resolve against. */
     @SerialName("domain") val domain: String? = null,
     @SerialName("supported_languages") val supportedLanguages: List<String>? = null,
 )

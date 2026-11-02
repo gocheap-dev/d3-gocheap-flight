@@ -21,6 +21,16 @@ data class Country(
     val currencyCode: String,
     /** The languages the supplier localises this country's pages into. Often empty. */
     val supportedLanguages: List<String> = emptyList(),
+    /**
+     * The supplier's own site for this country, e.g. `https://www.kayak.co.uk/` for GB.
+     *
+     * Null on most rows — about three quarters of the catalogue carries none — and that is a
+     * meaningful null rather than missing data: it marks a country the supplier does not run a
+     * site for. What reads it is the ad path, where an impression URL arrives relative to this
+     * and cannot be requested without it, so a country with no domain is a country with no ads.
+     * See [com.gocheap.travel.data.ads.AdsRepository].
+     */
+    val domain: String? = null,
 )
 
 /**
@@ -69,8 +79,7 @@ object Regions {
     private const val ResourcePath = "files/settings/Countries.json"
 
     private val json = Json {
-        // The catalogue carries keys this app has no use for — `domain` today — and may carry more
-        // after the next refresh.
+        // The catalogue may carry keys this app has no use for after the next refresh.
         ignoreUnknownKeys = true
         isLenient = true
     }
@@ -182,6 +191,8 @@ object Regions {
             currencyCode = row.currency?.code.orEmpty(),
             // `null` and `[]` mean the same thing in this file.
             supportedLanguages = row.supportedLanguages.orEmpty(),
+            // Blank and absent likewise: both mean "no site for this country".
+            domain = row.domain?.takeIf(String::isNotBlank),
         )
     }.sortedBy { it.name }
 

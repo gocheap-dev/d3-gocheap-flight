@@ -45,11 +45,20 @@ val buildValues = mapOf(
         Triple("Car", "CAR_BASE_URL", ""),
         Triple("Flight", "FLIGHT_BASE_URL", ""),
         Triple("User", "USER_BASE_URL", ""),
+        // The ad host — the supplier's own, not one of this publisher's four.
+        Triple("Ads", "ADS_BASE_URL", ""),
     ),
     // Read through `Constants.Support`, which is where the Profile tab looks.
     "SupportLinks" to listOf(
         Triple("PrivacyPolicyUrl", "PRIVACY_POLICY_URL", "https://www.gocheap.xyz/privacy-policy"),
         Triple("Email", "SUPPORT_EMAIL", "support@lascade.com"),
+    ),
+    // Read by `AdsHttpClient`, and the one credential in this file. Blank leaves the
+    // `Authorization` header off, which the ad host answers with a 401 — so a checkout without
+    // `ADS_ANONYMOUS_TOKEN` is a build with no ads rather than one reporting them as someone
+    // else's.
+    "AdsCredentials" to listOf(
+        Triple("Token", "ADS_ANONYMOUS_TOKEN", ""),
     ),
 ).mapValues { (_, entries) ->
     entries.associate { (name, key, default) -> name to localProperty(key, default) }
@@ -267,6 +276,10 @@ kotlin {
             // HTTP stack just for images.
             implementation(libs.coil.compose)
             implementation(libs.coil.network.ktor3)
+            // The supplier's brand logos are SVG — see `App`'s image loader. Without this Coil
+            // fetches them and then has no decoder for the bytes, which is a blank where the logo
+            // should be rather than an error anyone would notice.
+            implementation(libs.coil.svg)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

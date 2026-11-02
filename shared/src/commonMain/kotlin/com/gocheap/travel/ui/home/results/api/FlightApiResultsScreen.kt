@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.CircularProgressIndicator
@@ -34,6 +35,7 @@ import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.gocheap.travel.data.model.TripSearch
+import com.gocheap.travel.data.model.flight.ads.InlineAdItem
 import com.gocheap.travel.data.model.flight.api.FlightDeal
 import com.gocheap.travel.data.model.flight.api.FlightOption
 import com.gocheap.travel.ui.component.EmptyState
@@ -80,6 +82,11 @@ import flighttp.shared.generated.resources.try_widening_them_to_see_more_fares
 internal fun FlightApiResultsScreen(
     onBack: () -> Unit,
     onOpenDeal: (FlightDeal) -> Unit,
+    /**
+     * An inline ad being opened. Takes a resolved URL and the advertiser's name rather than the
+     * ad, because the ad's own deeplink is relative and resolving it is the data layer's job.
+     */
+    onOpenAd: (url: String, title: String) -> Unit,
     /**
      * Called when the backend refuses to run an API search for this build at all.
      *
@@ -194,6 +201,12 @@ internal fun FlightApiResultsScreen(
                         state = state,
                         onLoadMore = viewModel::loadMore,
                         onSelect = onOptionTapped,
+                        onAdDisplayed = viewModel::onAdDisplayed,
+                        onAdSelected = { ad ->
+                            viewModel.onAdSelected(ad) { url ->
+                                onOpenAd(url, adSiteName(ad.companyName, state.adBaseDomain))
+                            }
+                        },
                         modifier = Modifier.fillMaxSize(),
                     )
                 }
@@ -265,6 +278,8 @@ private fun FlightResultsList(
     state: FlightApiResultsUiState,
     onLoadMore: () -> Unit,
     onSelect: (FlightOption) -> Unit,
+    onAdDisplayed: (InlineAdItem) -> Unit,
+    onAdSelected: (InlineAdItem) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val listState = rememberLazyListState()
@@ -281,6 +296,10 @@ private fun FlightResultsList(
             .collect { if (it) onLoadMore() }
     }
 
+    val rows = remember(state.options, state.ads) {
+        interleaveAds(state.options, state.ads)
+    }
+
     LazyColumn(
         state = listState,
         modifier = modifier,
@@ -292,17 +311,35 @@ private fun FlightResultsList(
         ),
         verticalArrangement = Arrangement.spacedBy(FlightSpacing.ItemGap),
     ) {
-        items(
-            items = state.options,
+        itemsIndexed(
+            items = rows,
             // Index folded into the key: the backend repeats an id across pages often enough that
-            // keying on it alone drops rows, and a result set with duplicate keys crashes outright.
-            key = { option -> option.id ?: option.hashCode().toString() },
-        ) { option ->
-            FlightResultCard(
-                option = option,
-                currency = state.currency,
-                onClick = { onSelect(option) },
-            )
+            // keying on it alone drops rows, and a result set with duplicate keys crashes
+            // outright. An ad is keyed on its own slot for the same reason.
+            key = { index, row ->
+                when (row) {
+                    is ResultRow.Option -> row.option.id ?: row.option.hashCode().toString()
+                    is ResultRow.Ad -> "ad-$index"
+                }
+            },
+            // So the two shapes are recycled against their own kind rather than against each
+            // other, which is what an ad every few rows would otherwise cost.
+            contentType = { _, row -> row::class },
+        ) { _, row ->
+            when (row) {
+                is ResultRow.Option -> FlightResultCard(
+                    option = row.option,
+                    currency = state.currency,
+                    onClick = { onSelect(row.option) },
+                )
+
+                is ResultRow.Ad -> FlightAdCard(
+                    ad = row.ad,
+                    baseDomain = state.adBaseDomain,
+                    onClick = { onAdSelected(row.ad) },
+                    onDisplayed = { onAdDisplayed(row.ad) },
+                )
+            }
         }
 
         if (state.isLoadingMore) {
@@ -420,3 +457,49 @@ private fun FlightApiResultsLoadingPreview() {
         )
     }
 }
+
+/**
+ * One row of the results list: an itinerary, or an ad threaded between them.
+ *
+ * A type rather than two parallel lists because a `LazyColumn` lays out one sequence, and the
+ * alternative — index arithmetic at the call site to work out which of two lists row 7 belongs to
+ * — is the kind of thing that is correct until the ad count changes.
+ */
+private sealed interface ResultRow {
+    data class Option(val option: FlightOption) : ResultRow
+    data class Ad(val ad: InlineAdItem) : ResultRow
+}
+
+/**
+ * The itineraries with the ads threaded through them: one ad after every [AdInterval] results.
+ *
+ * The reference app's placement. Two results between ads is dense enough that a scrolling user
+ * reliably passes one, and far enough apart that the list still reads as results rather than as a
+ * carousel.
+ *
+ * **Ads run out, results do not.** There are only ever a handful of ads for a route against
+ * hundreds of results, so once [ads] is exhausted the rest of the list is itineraries — rather
+ * than the same ad repeating down the page, which is both worse to look at and an impression the
+ * host is not paid for twice.
+ *
+ * An ad is never the first row: the slot after the first [AdInterval] results is the earliest one
+ * there is, which keeps the top of a search the user just ran as the results they asked for.
+ */
+private fun interleaveAds(
+    options: List<FlightOption>,
+    ads: List<InlineAdItem>,
+): List<ResultRow> {
+    if (ads.isEmpty()) return options.map(ResultRow::Option)
+    return buildList(options.size + ads.size) {
+        options.forEachIndexed { index, option ->
+            add(ResultRow.Option(option))
+            val slot = (index + 1) / AdInterval - 1
+            if ((index + 1) % AdInterval == 0 && slot in ads.indices) {
+                add(ResultRow.Ad(ads[slot]))
+            }
+        }
+    }
+}
+
+/** How many results sit between two ads. The reference app's two. */
+private const val AdInterval = 2

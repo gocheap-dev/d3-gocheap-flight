@@ -48,6 +48,18 @@ object AnalyticsEvent {
     /** A region, currency, language or price-display choice on the Profile tab. */
     const val SETTING_CHANGED = "setting_changed"
 
+    /**
+     * An inline ad reaching the screen — the event the ad host is paid on, reported once per ad
+     * actually seen. Carries [TYPE] to say which placement it was: [POPUP_AD] or [NATIVE_AD].
+     *
+     * Fired beside the ad host's own impression URL, never instead of it: the two count different
+     * things for different people, and only the host's call is billable. See `AdsRepository`.
+     */
+    const val AD_IMPRESSION_NATIVE = "ad_impression_native"
+
+    /** An inline ad being tapped. Carries the same [TYPE] its impression did. */
+    const val AD_CLICK_NATIVE = "ad_click_native"
+
     /* --------------------------------- Parameter keys ---------------------------------- */
 
     const val TEXT = "text"
@@ -62,6 +74,16 @@ object AnalyticsEvent {
     const val CURRENCY_CODE = "currency_code"
     const val LANGUAGE_CODE = "language_code"
     const val PROVIDER_NAME = "provider_name"
+    /**
+     * Which supplier an *ad* is for, as opposed to [PROVIDER_NAME], which is the booking site
+     * behind a deal in the results list.
+     *
+     * Two keys for what looks like one question, and deliberately so: this is the reference app's
+     * name for it on the ad events, and the ad reports are read across the publisher's apps
+     * together. Folding ads onto [PROVIDER_NAME] here would make this build's ad revenue the one
+     * that does not line up with the others.
+     */
+    const val PROVIDER = "provider"
     const val LOCATION = "location"
     const val ARRIVAL_LOCATION = "arrival_location"
     const val DROP_OFF_LOCATION = "dropoff_location"
@@ -93,6 +115,16 @@ object AnalyticsEvent {
     const val EXIT_SDK = "sdk"
     const val EXIT_DEEPLINK = "deeplink"
     const val EXIT_API = "api"
+
+    /**
+     * Where an ad was shown, which is the only thing separating the two placements in a report.
+     *
+     * [POPUP_AD] is the card on the Home tab and [NATIVE_AD] the one inside the flight results
+     * list. The spelling of the first is the reference app's — `pop_up_ad`, with the underscore —
+     * and is kept rather than tidied, for the same reason [PROVIDER] is.
+     */
+    const val POPUP_AD = "pop_up_ad"
+    const val NATIVE_AD = "native_ad"
 
     /** Where a search was started from, which separates a deliberate search from a one-tap one. */
     const val SEARCH_FORM = "search_form"

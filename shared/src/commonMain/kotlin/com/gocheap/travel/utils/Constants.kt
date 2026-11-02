@@ -118,6 +118,48 @@ object Constants {
         }
     }
 
+    /**
+     * The inline ads shown alongside flight results, served by the supplier's own ad host rather
+     * than by any of this publisher's three.
+     *
+     * Two calls in sequence and a third that is fire-and-forget: a session is opened once and
+     * reused, every ad request quotes its id, and an ad that reaches the screen reports back.
+     */
+    object Ads {
+
+        /**
+         * `GET ads/session` — opens an ad session and answers with the `sid` every later call
+         * quotes. Takes the country and a `label`, which is this install's user id.
+         */
+        const val SessionPath = "ads/session"
+
+        /**
+         * `POST ads/flight/list` — the ads for one trip. The trip travels as the body and the
+         * session id as `_sid_`, which is the host's own spelling and not a choice made here.
+         */
+        const val FlightListPath = "ads/flight/list"
+
+        /**
+         * How long a session id is reused before a new one is opened.
+         *
+         * The reference app's twenty minutes. The host does not say when a session expires, so
+         * this is a ceiling chosen below it rather than a value read from a response — an expired
+         * id comes back as a 401, which is handled besides this. See `AdsRepository`.
+         */
+        const val SessionValidityMillis = 20L * 60L * 1_000L
+
+        /**
+         * What the host calls the party, one entry per traveller.
+         *
+         * Not the ages `api/v3/search/` takes — the same trip is described to the two endpoints in
+         * two different vocabularies, and this is the ad host's. A lap infant is "seatInfant" here
+         * even though it occupies no seat, which is the reference app's spelling of it.
+         */
+        const val Adult = "adult"
+        const val Child = "child"
+        const val Infant = "seatInfant"
+    }
+
     /** This app's own backend: who the install is, and what it has done. */
     object User {
         const val AddUserPath = "users/add/"

@@ -14,20 +14,42 @@ import kotlin.test.assertTrue
  *
  * The accepted set was established against the staging backend: `api` and `deeplink` are taken,
  * and `sdk`, `SDK`, `tpt_sdk`, `tp`, `travelpayouts`, `web`, `app` and `widget` are all refused.
+ *
+ * **`ads` was never among the words tried**, and is the one exit below that is not covered by
+ * that finding — see [an_ad_exit_sends_the_reference_apps_word]. The carve-out is explicit rather
+ * than folded into [accepted] so that widening the verified set stays a deliberate act: the whole
+ * value of this test is that the set was measured and not guessed at.
  */
 class FlightExitTest {
 
-    /** The only two words the endpoint accepts. */
+    /** The two words the endpoint was measured to accept. */
     private val accepted = setOf("api", "deeplink")
 
     @Test
-    fun every_exit_sends_a_word_the_endpoint_accepts() {
-        SessionTracking.FlightExit.entries.forEach { exit ->
-            assertTrue(
-                exit.wireValue in accepted,
-                "${exit.name} sends \"${exit.wireValue}\", which users/session/ rejects with 400",
-            )
-        }
+    fun every_search_exit_sends_a_word_the_endpoint_accepts() {
+        SessionTracking.FlightExit.entries
+            .filter { it != SessionTracking.FlightExit.Ads }
+            .forEach { exit ->
+                assertTrue(
+                    exit.wireValue in accepted,
+                    "${exit.name} sends \"${exit.wireValue}\", which users/session/ rejects with 400",
+                )
+            }
+    }
+
+    /**
+     * An ad exit sends `ads`, which is what the reference app sends on this exact path against
+     * this exact backend (`AdResultViewModel`, `type = "ads"`, same `staging.data.lascade.com`).
+     *
+     * Not verified here, and it cannot be from a test: the endpoint validates `user_id` before it
+     * looks at `type`, so establishing the answer needs a real registered id and writes a real
+     * session row. Until someone does that, this pins the intent — and if the word turns out to
+     * be refused, the symptom is a 400 in the `StartSession` log and ad exits missing from the
+     * backend's numbers, with nothing else visibly wrong.
+     */
+    @Test
+    fun an_ad_exit_sends_the_reference_apps_word() {
+        assertEquals("ads", SessionTracking.FlightExit.Ads.wireValue)
     }
 
     @Test

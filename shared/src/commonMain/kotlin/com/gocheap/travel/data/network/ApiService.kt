@@ -25,6 +25,10 @@ import com.gocheap.travel.data.network.hotel.HotelHttpClient
 import com.gocheap.travel.data.network.user.UserHttpClient
 import com.gocheap.travel.data.user.platformAppCode
 import com.gocheap.travel.utils.Constants
+import com.gocheap.travel.data.model.flight.ads.AdSessionResponse
+import com.gocheap.travel.data.model.flight.ads.FlightAdsRequest
+import com.gocheap.travel.data.model.flight.ads.FlightAdsResponse
+import com.gocheap.travel.data.network.ads.AdsHttpClient
 import io.ktor.client.call.body
 import io.ktor.client.plugins.timeout
 import io.ktor.client.request.delete
@@ -46,6 +50,7 @@ internal class ApiService(
     private val carClient: KtorHttpClient = CarHttpClient.instance,
     private val flightClient: KtorHttpClient = FlightHttpClient.instance,
     private val userClient: KtorHttpClient = UserHttpClient.instance,
+    private val adsClient: KtorHttpClient = AdsHttpClient.instance,
 ) {
 
     /**
@@ -265,6 +270,68 @@ internal class ApiService(
         flightClient.delete(Constants.Flight.DeleteSearchPath) {
             url { parameters.append("search_id", searchId) }
         }.body()
+
+    /**
+     * `GET ads/session?countryCode=&label=` — opens an ad session.
+     *
+     * [label] is who is asking, and it is this install's user id rather than a name: the host
+     * keys a session on it and the reference app sends the same thing. An install that has not
+     * registered yet sends the platform's anonymous id, which is what
+     * [com.gocheap.travel.data.user.UserSession.deeplinkUserId] already resolves to.
+     *
+     * Throws on transport failure or a non-2xx response — the repository is what turns that into
+     * a result, and what reads a 401 as "the session has expired".
+     */
+    suspend fun adsSession(
+        label: String,
+        countryCode: String,
+    ): AdSessionResponse = adsClient.get(Constants.Ads.SessionPath) {
+        url {
+            parameters.append("countryCode", countryCode)
+            parameters.append("label", label)
+        }
+    }.body()
+
+    /**
+     * `POST ads/flight/list?_sid_=&countryCode=` — the ads for one trip.
+     *
+     * [sid] comes from [adsSession] and goes in the query rather than a header, under the host's
+     * own `_sid_` spelling. The trip travels as the body.
+     *
+     * Throws like the rest; the repository turns that into a result.
+     */
+    suspend fun adsFlightList(
+        sid: String,
+        countryCode: String,
+        request: FlightAdsRequest,
+    ): FlightAdsResponse = adsClient.post(Constants.Ads.FlightListPath) {
+        url {
+            parameters.append("_sid_", sid)
+            parameters.append("countryCode", countryCode)
+        }
+        contentType(ContentType.Application.Json)
+        setBody(request)
+    }.body()
+
+    /**
+     * Reports that an ad has been seen, by requesting the URL the ad came with.
+     *
+     * Takes a whole URL rather than a path, and that is the point: an impression URL is relative
+     * to the *supplier's* site for the user's country, not to the ad host this client is pointed
+     * at. The repository absolutises it before calling — passing a relative one here would
+     * resolve it against [com.gocheap.travel.utils.BaseUrls.Ads] and report the impression to the
+     * wrong place. Ktor treats an absolute URL as replacing the default rather than appending to
+     * it, so an absolute one arrives where it was addressed.
+     *
+     * The response is discarded. There is nothing in it: the request *is* the report, and the
+     * only thing a caller can do with the answer is notice that it failed.
+     *
+     * Throws like the rest. A failed impression costs a tracked view and nothing else, so the
+     * repository logs it rather than surfacing it.
+     */
+    suspend fun adsImpression(url: String) {
+        adsClient.get(url)
+    }
 
     /**
      * The filters, as the parameter names the endpoint reads them under.

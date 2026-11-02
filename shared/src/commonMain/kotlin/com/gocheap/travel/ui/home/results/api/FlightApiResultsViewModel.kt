@@ -21,6 +21,8 @@ import com.gocheap.travel.data.model.flight.api.FlightPollResponse
 import com.gocheap.travel.data.model.flight.api.FlightSearchFilters
 import com.gocheap.travel.data.model.flight.api.FlightSort
 import com.gocheap.travel.data.recent.RecentSearchStore
+import com.gocheap.travel.data.ads.AdsRepository
+import com.gocheap.travel.data.model.flight.ads.InlineAdItem
 import com.gocheap.travel.data.user.SessionTracking
 import com.gocheap.travel.utils.Constants
 import com.gocheap.travel.utils.logDebug
@@ -83,6 +85,22 @@ internal data class FlightApiResultsUiState(
 
     /** The itineraries on screen, in the order the backend returned them under [filters]. */
     val options: List<FlightOption> = emptyList(),
+
+    /**
+     * The inline ads to thread through [options], in the host's own ranking.
+     *
+     * Empty is the ordinary case, not a failure: ads are switched off for most countries and the
+     * host often has nothing for a route. See `AdsRepository`.
+     */
+    val ads: List<InlineAdItem> = emptyList(),
+
+    /**
+     * The supplier's site for the user's country, which an ad's logo and links are relative to.
+     *
+     * Blank where the country has none — the same condition that leaves [ads] empty, carried
+     * separately because the card needs it to render a logo at all.
+     */
+    val adBaseDomain: String = "",
 
     /** How to render a price. Null until the first poll answers; the UI falls back to plain digits. */
     val currency: CurrencyInfo? = null,
@@ -186,6 +204,7 @@ internal data class FlightApiResultsUiState(
  */
 internal class FlightApiResultsViewModel(
     private val repository: FlightSearchRepository = FlightSearchRepository(),
+    private val adsRepository: AdsRepository = AdsRepository(),
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(FlightApiResultsUiState())
@@ -202,6 +221,15 @@ internal class FlightApiResultsViewModel(
 
     /** The debounce timer behind a slider, so a drag runs one search rather than thirty. */
     private var filterJob: Job? = null
+
+    /**
+     * The ad fetch, separate from [searchJob] so a filter change does not cancel it.
+     *
+     * Ads are for the *route*, not for the filtered result set: the host is asked once per trip
+     * and the same ads stand whatever the user then filters down to. Re-fetching on every filter
+     * change would be a request per slider drag for an answer that does not change.
+     */
+    private var adsJob: Job? = null
 
     /** The highest page fetched. Pagination asks for the next one after this. */
     private var currentPage = 1
@@ -241,6 +269,10 @@ internal class FlightApiResultsViewModel(
         _state.update {
             it.copy(
                 options = emptyList(),
+                // Cleared with the results: the ads that were on screen were for the previous
+                // route, and leaving them up through a new search shows an ad for a trip the user
+                // has moved on from.
+                ads = emptyList(),
                 totalCount = 0,
                 isSearching = true,
                 isCollecting = false,
@@ -250,6 +282,10 @@ internal class FlightApiResultsViewModel(
                 failure = null,
             )
         }
+
+        // Alongside the search rather than after it: the two are independent, and an ad that
+        // waited for results would arrive after the user had already scrolled past where it goes.
+        loadAds(search)
 
         searchJob = viewModelScope.launch {
             SessionTracking.flightSearch(search, SessionTracking.FlightExit.Api)
@@ -728,6 +764,75 @@ internal class FlightApiResultsViewModel(
         viewModelScope.launch {
             SessionTracking.flightSearch(search, SessionTracking.FlightExit.Api, tag = deal.name)
         }
+    }
+
+    /* ---------------------------------------- Ads ---------------------------------------- */
+
+    /**
+     * Asks the host for ads for this trip.
+     *
+     * Once per search, not once per poll: the answer is about the route, and the route does not
+     * change while results arrive. Failures land as an empty list — see `AdsRepository`, which
+     * swallows everything — so there is no failure path here to write.
+     */
+    private fun loadAds(search: TripSearch) {
+        adsJob?.cancel()
+        adsJob = viewModelScope.launch {
+            val ads = adsRepository.inlineAds(search)
+            if (ads.isEmpty()) return@launch
+            _state.update { it.copy(ads = ads, adBaseDomain = adsRepository.countryBaseDomain()) }
+        }
+    }
+
+    /**
+     * An ad that has reached the screen.
+     *
+     * The host's own impression URL and the GA4 event are fired together, and only on the call
+     * that actually reported one: `trackImpression` answers true exactly once per ad, which is
+     * what keeps the two counts equal when the list recomposes or scrolls the card back into
+     * view. See [FlightAnalytics.adImpression].
+     */
+    fun onAdDisplayed(ad: InlineAdItem) {
+        viewModelScope.launch {
+            if (!adsRepository.trackImpression(ad)) return@launch
+            val search = state.value.search
+            FlightAnalytics.adImpression(
+                placement = AnalyticsEvent.NATIVE_AD,
+                provider = ad.site,
+                origin = search?.from?.code,
+                destination = search?.to?.code,
+            )
+        }
+    }
+
+    /**
+     * An ad the user is leaving for.
+     *
+     * Three things happen, which is the reference app's arrangement and the same shape as
+     * [onDealSelected]: the tap is reported to GA4, a session row records it against this trip
+     * under its own `ads` type, and [onOpen] is handed the resolved URL for the caller to open.
+     *
+     * Does nothing at all when the ad's deeplink cannot be resolved — a country with no supplier
+     * site has nowhere to send the user, and reporting a tap that went nowhere would overstate
+     * the ads.
+     */
+    fun onAdSelected(ad: InlineAdItem, onOpen: (String) -> Unit) {
+        val url = adsRepository.deeplink(ad) ?: return
+        val search = state.value.search
+
+        // Outside the coroutine, for the same reason as in [onDealSelected]: this is the tap.
+        FlightAnalytics.adClick(
+            placement = AnalyticsEvent.NATIVE_AD,
+            provider = ad.site,
+            buttonText = ad.bookingButtonText,
+            screenName = AnalyticsEvent.RESULT_SCREEN,
+            origin = search?.from?.code,
+            destination = search?.to?.code,
+        )
+        if (search != null) {
+            viewModelScope.launch { SessionTracking.adClick(search, ad.site) }
+        }
+        onOpen(url)
     }
 
     /**

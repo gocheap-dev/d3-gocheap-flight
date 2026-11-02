@@ -19,16 +19,29 @@ import com.gocheap.travel.data.model.flight.api.FlightDeal
  */
 internal object SelectedFlightDeal {
 
-    private var current: FlightDeal? = null
+    /** What the checkout page should load, or null if it was opened without anything picked. */
+    var url: String? = null
+        private set
+
+    /** Blank when the destination is unnamed; the checkout screen supplies a word for it. */
+    var title: String = ""
+        private set
 
     fun set(deal: FlightDeal) {
-        current = deal
+        url = deal.deeplink?.takeIf(String::isNotBlank)
+        title = deal.name?.takeIf(String::isNotBlank).orEmpty()
     }
 
-    /** What the checkout page should load, or null if it was opened without a deal having been picked. */
-    val url: String? get() = current?.deeplink?.takeIf(String::isNotBlank)
-
-    /** The seller's name for the page's title, falling back to a neutral word for the screen. */
-    /** Blank when the seller is unnamed; the checkout screen supplies a word for it. */
-    val title: String get() = current?.name?.takeIf(String::isNotBlank).orEmpty()
+    /**
+     * An inline ad being opened, which goes to the same page for the same reason: it is a
+     * supplier's own URL loaded in a web view, and whether the user got there from a deal or from
+     * an ad changes nothing about how it is shown.
+     *
+     * Takes a resolved URL rather than the ad, because resolving one is `AdsRepository`'s job —
+     * an ad's deeplink arrives relative to the supplier's site for the user's country.
+     */
+    fun set(url: String, title: String) {
+        this.url = url.takeIf(String::isNotBlank)
+        this.title = title
+    }
 }

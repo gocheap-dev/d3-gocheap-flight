@@ -66,8 +66,8 @@ internal object SessionTracking {
      * in-app. All three have a flight path now — which one a search takes is the controller's
      * `new_tab` decision.
      *
-     * Three cases, two wire values: the endpoint only distinguishes "drawn here" from "left the
-     * app". See [Sdk].
+     * Four cases, three wire values: the two results paths that leave the app share one word. See
+     * [Sdk] for why, and [Ads] for the one that is not a search at all.
      */
     enum class FlightExit(val wireValue: String) {
         /**
@@ -94,6 +94,20 @@ internal object SessionTracking {
 
         /** Fetched and drawn in-app off the search/poll endpoints. */
         Api("api"),
+
+        /**
+         * An inline ad being tapped — not a search leaving at all, but a paid placement being
+         * taken up. Its own word so that ad revenue can be told apart from search revenue in the
+         * backend's numbers, which is the whole reason the row is worth sending.
+         *
+         * **Not verified against the backend, unlike the three above.** The note on [Sdk] records
+         * that `type` was tested and found to accept exactly `api` and `deeplink` — but `ads` was
+         * not among the words tried, and the reference app sends it on this exact path
+         * (`AdResultViewModel`, `type = "ads"`), which is good evidence the endpoint knows it.
+         * If it does not, the symptom is the one [Sdk] describes: `400 {"msg":"Invalid type"}`
+         * and a row recorded nowhere, visible in the `StartSession` log and nowhere else.
+         */
+        Ads("ads"),
     }
 
     /** How a stay or a rental leaves, which is only ever out to the supplier's own page. */
@@ -146,6 +160,19 @@ internal object SessionTracking {
             )
         },
     )
+
+    /**
+     * An inline ad being tapped, recorded against the trip it was shown for.
+     *
+     * The same body a flight search sends — the backend reads an ad against the route it appeared
+     * on, which is the only thing that makes it comparable with the searches around it — with
+     * [FlightExit.Ads] as the type and the ad's supplier as the tag.
+     *
+     * Fired beside `FlightAnalytics.adClick`, so the two counts of an ad tap agree, exactly as
+     * they do for every other exit. The reference app does the same from `AdResultViewModel`.
+     */
+    fun adClick(search: TripSearch, site: String?) =
+        flightSearch(search = search, exit = FlightExit.Ads, tag = site)
 
     /** A stay search handed to the supplier's results page. */
     fun staySearch(search: HotelSearch) = send(
