@@ -41,10 +41,10 @@ fun localProperty(name: String, default: String): String = localPropertyOrNull(n
 val buildValues = mapOf(
     // Read directly by the four HTTP clients and the three deeplink builders.
     "BaseUrls" to listOf(
-        Triple("Hotel", "HOTEL_BASE_URL", "https://staging.hotel.lascade.com/"),
-        Triple("Car", "CAR_BASE_URL", "https://staging.car.lascade.com/"),
-        Triple("Flight", "FLIGHT_BASE_URL", "https://staging.plane.lascade.com/"),
-        Triple("User", "USER_BASE_URL", "https://staging.data.lascade.com/api/v1/"),
+        Triple("Hotel", "HOTEL_BASE_URL", ""),
+        Triple("Car", "CAR_BASE_URL", ""),
+        Triple("Flight", "FLIGHT_BASE_URL", ""),
+        Triple("User", "USER_BASE_URL", ""),
     ),
     // Read through `Constants.Support`, which is where the Profile tab looks.
     "SupportLinks" to listOf(
