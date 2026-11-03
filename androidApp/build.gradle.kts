@@ -109,7 +109,7 @@ android {
         // Whatever this resolves to has to be a package `google-services.json` lists a client for
         // — the plugin matches on it and fails the build when nothing matches, so an override
         // here needs a matching entry there.
-        applicationId = localProperty("APPLICATION_ID", default = "com.example.flighttp")
+        applicationId = localProperty("APPLICATION_ID", default = "")
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
