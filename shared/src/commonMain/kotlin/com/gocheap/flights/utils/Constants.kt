@@ -240,7 +240,7 @@ object Constants {
          * app's `APPLICATION_NAME` does. Not the package id and not the display label — the
          * backend matches on this string, so it stays put even if either of those is renamed.
          */
-        const val ApplicationName = "GoCheap: Flights & eSIM"
+        const val ApplicationName = "GoCheap"
 
         /**
          * What the app calls itself on screen.
