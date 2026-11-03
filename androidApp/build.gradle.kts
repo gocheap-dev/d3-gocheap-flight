@@ -157,13 +157,57 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    /**
+     * How a release APK gets signed.
+     *
+     * A release keystore belongs in local.properties — git-ignored, like every other credential
+     * this build reads — and is used whenever RELEASE_KEYSTORE_FILE names a file that exists. When
+     * it does not, the build falls back to the debug keystore rather than producing an
+     * `-unsigned.apk`: a release build that cannot be installed is a release build nobody checks,
+     * and the point of minifying is to find out what minifying broke.
+     *
+     * The fallback is warned about loudly, because a debug-signed APK is for testing only — Play
+     * will not take it, and it cannot upgrade an install signed with the real key.
+     */
+    val releaseKeystore = localProperty("RELEASE_KEYSTORE_FILE")
+        .takeIf { it.isNotBlank() }
+        ?.let { rootProject.file(it) }
+        ?.takeIf { it.exists() }
+
+    signingConfigs {
+        if (releaseKeystore != null) {
+            create("release") {
+                storeFile = releaseKeystore
+                storePassword = localProperty("RELEASE_KEYSTORE_PASSWORD")
+                keyAlias = localProperty("RELEASE_KEY_ALIAS")
+                keyPassword = localProperty("RELEASE_KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            isMinifyEnabled = false
+            // R8 on: unused classes and members removed, everything that survives renamed. What it
+            // is allowed to remove and rename is what proguard-rules.pro is for — the Travelpayouts
+            // SDK ships no consumer rules of its own, so all of its are written there by hand.
+            isMinifyEnabled = true
+            // Drops resources no surviving code refers to. Safe here because nothing in this app or
+            // the SDK looks a resource up by name through `Resources.getIdentifier` — checked
+            // against the .aar, which is the only place it could have been hiding.
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = if (releaseKeystore != null) {
+                signingConfigs.getByName("release")
+            } else {
+                logger.warn(
+                    "warning: no RELEASE_KEYSTORE_FILE in local.properties — signing the release " +
+                        "build with the debug key. Installable for testing, not shippable."
+                )
+                signingConfigs.getByName("debug")
+            }
         }
     }
     compileOptions {

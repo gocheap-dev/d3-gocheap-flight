@@ -87,7 +87,7 @@ internal object SessionTracking {
          * which one a search takes is the controller's decision, and that is worth reading in
          * logs even where the wire cannot tell them apart.
          */
-        Sdk("deeplink"),
+        Sdk("sdk"),
 
         /** Out to a supplier's own results page in a web view. */
         Deeplink("deeplink"),
