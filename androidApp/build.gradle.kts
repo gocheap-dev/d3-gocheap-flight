@@ -99,7 +99,7 @@ fun localProperty(name: String, default: String = ""): String =
         ?: default
 
 android {
-    namespace = "com.gocheap.travel"
+    namespace = "com.gocheap.flights"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
