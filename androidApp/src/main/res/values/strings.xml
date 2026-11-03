@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GoCheap: Flights &amp; eSIM</string>
+    <string name="app_name">GoCheap: Flight Ticket Booking</string>
 
     <!--
       The notification channel every push lands in. An Android resource rather than one of the

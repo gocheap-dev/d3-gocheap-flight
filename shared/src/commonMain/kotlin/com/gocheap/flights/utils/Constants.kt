@@ -245,17 +245,18 @@ object Constants {
         /**
          * What the app calls itself on screen.
          *
-         * Deliberately not [ApplicationName], which happens to hold the same text today: that one
-         * is matched on by the backend and must not move when the brand does, and this one is a
-         * label that may be translated or rebranded without anything on the wire changing.
-         * Collapsing the two would mean a rename of either silently rewriting the other.
+         * Deliberately not [ApplicationName], and the two now differ: that one is matched on by
+         * the backend and did not move when the brand did, while this one is a label that may be
+         * translated or rebranded without anything on the wire changing. They held the same text
+         * until this was renamed, which is exactly the moment collapsing them would have cost a
+         * User-Agent the backend no longer recognised.
          *
          * Used as the title over every supplier page the app embeds — see `ResultsWebView`. Those
          * pages are somebody else's, and the toolbar above them is the one thing on screen that
          * still belongs to this app, so it says so rather than repeating the route or naming the
          * seller.
          */
-        const val DisplayName = "GoCheap: Flights & eSIM"
+        const val DisplayName = "GoCheap: Flight Ticket Booking"
     }
 
     /**
