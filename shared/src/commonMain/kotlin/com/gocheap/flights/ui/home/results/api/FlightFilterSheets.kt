@@ -24,8 +24,10 @@ import androidx.compose.material3.ModalBottomSheet
 import com.gocheap.flights.analytics.ga4.AnalyticsEvent
 import com.gocheap.flights.analytics.ga4.TrackSheetView
 import androidx.compose.material3.RangeSlider
+import androidx.compose.material3.RangeSliderState
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderDefaults
+import androidx.compose.material3.SliderState
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
@@ -348,6 +350,7 @@ private fun TimeWindowSlider(
             colors = sliderColors(),
             startThumb = { RoundSliderThumb() },
             endThumb = { RoundSliderThumb() },
+            track = { RoundSliderTrack(it) },
         )
     }
 }
@@ -476,6 +479,7 @@ private fun PriceSheet(
                 colors = sliderColors(),
                 startThumb = { RoundSliderThumb() },
                 endThumb = { RoundSliderThumb() },
+                track = { RoundSliderTrack(it) },
             )
         }
     }
@@ -526,6 +530,7 @@ private fun DurationSheet(
                 valueRange = bounds.first.toFloat()..bounds.last.toFloat(),
                 colors = sliderColors(),
                 thumb = { RoundSliderThumb() },
+                track = { RoundSliderTrack(it) },
             )
         }
     }
@@ -618,10 +623,19 @@ private fun sliderColors() = SliderDefaults.colors(
  * White fill rather than solid blue: the thumb sits *on* the active blue track, and a blue disc
  * on a blue bar loses its edge exactly where the user needs to see it.
  *
+ * The ring is a grey hairline rather than a second blue. Against the active track the white fill
+ * is already the contrast; what the ring is for is the other half of the journey, holding an edge
+ * once the handle has slid off the blue and onto the white sheet behind it.
+ *
  * **No elevation.** A drop shadow at this size does not resolve into a circle — the falloff is
  * wider than the 22dp disc casting it, so it reads as a soft grey box sitting behind a round
  * thumb. The ring already separates the thumb from both the blue track and the white sheet, which
  * is the whole job the shadow would have been doing.
+ *
+ * Drawn rather than carried as an asset. The spec for this handle is a 22dp vector — a circle of
+ * radius 10.25 stroked 1.5 — and an inset border on a 22dp box is the same circle: the stroke
+ * spans radius 9.5 to 11.0 either way. Keeping it as a shape also keeps it on both platforms,
+ * which an Android vector drawable in a module compiled for iOS as well would not do.
  */
 @Composable
 private fun RoundSliderThumb() {
@@ -630,13 +644,59 @@ private fun RoundSliderThumb() {
             .size(ThumbDiameter)
             .clip(CircleShape)
             .background(FlightColors.Surface)
-            .border(ThumbRing, FlightColors.Primary, CircleShape),
+            .border(ThumbRing, FlightColors.SliderThumbRing, CircleShape),
     )
 }
 
 /** Big enough to be dragged with a thumb without covering the track it is being read against. */
 private val ThumbDiameter = 22.dp
-private val ThumbRing = 2.5.dp
+private val ThumbRing = 1.5.dp
+
+/**
+ * The track, with the notch Material 3 cuts around the thumb closed up.
+ *
+ * By default the bar stops short of the handle and starts again past it, and each stub is capped
+ * with a 2dp corner on a bar several times that tall. At the size this slider draws, that stub
+ * reads as a small square block sitting against the round handle rather than as the end of a line
+ * — which is the rectangle that appeared beside the thumb.
+ *
+ * A gap of zero removes the stubs rather than rounding them: there is then one continuous bar
+ * running under the handle, with the active and inactive halves meeting beneath it. That is what
+ * the thumb was drawn for — a white disc that holds its own edge needs nothing cut out behind it.
+ *
+ * The bar is also taken down to [TrackThickness] from the 16dp Material defaults to. At the
+ * default it stands nearly as tall as the 22dp handle, so the two read as one slab with a notch
+ * in it rather than as a handle sitting on a line. Set through the modifier rather than a
+ * parameter because Material exposes no height on this slot — the track applies its own
+ * `height(16.dp)` inside, and an outer height wins by constraining what that call is measured
+ * against. Its end caps follow: the corner radius is derived from the measured height, so a
+ * thinner bar stays fully rounded without being told to.
+ *
+ * Two overloads because Material models a one-handle and a two-handle slider as separate states,
+ * and the track slot is typed to whichever it belongs to.
+ */
+@Composable
+private fun RoundSliderTrack(state: SliderState) {
+    SliderDefaults.Track(
+        sliderState = state,
+        modifier = Modifier.height(TrackThickness),
+        colors = sliderColors(),
+        thumbTrackGapSize = 0.dp,
+    )
+}
+
+@Composable
+private fun RoundSliderTrack(state: RangeSliderState) {
+    SliderDefaults.Track(
+        rangeSliderState = state,
+        modifier = Modifier.height(TrackThickness),
+        colors = sliderColors(),
+        thumbTrackGapSize = 0.dp,
+    )
+}
+
+/** Thin enough that the handle reads as sitting *on* the track rather than being part of it. */
+private val TrackThickness = 6.dp
 
 // --- helpers ---------------------------------------------------------------------------------
 

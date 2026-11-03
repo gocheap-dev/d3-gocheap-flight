@@ -42,6 +42,13 @@ object FlightColors {
     val BorderStrong = Color(0xFFD5DAE3)
     val Divider = Color(0xFFEDF0F5)
 
+    /**
+     * The hairline around a slider handle. Its own token rather than one of the two borders above
+     * because it sits between them on the grey ramp, and because it is read against two different
+     * backgrounds — the blue track and the white sheet — rather than against a card edge.
+     */
+    val SliderThumbRing = Color(0xFFDCE1E8)
+
     val Success = Color(0xFF2FBF71)
     val Warning = Color(0xFFF7A94A)
     val Danger = Color(0xFFE5484D)
